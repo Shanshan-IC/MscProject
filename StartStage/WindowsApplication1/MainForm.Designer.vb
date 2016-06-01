@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MainForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
@@ -45,6 +45,8 @@ Partial Class MainForm
         Me.NeighborhoodFilterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MeanFilterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MedianFilterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InvertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HistogramToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PUIPHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutPUIPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -137,31 +139,31 @@ Partial Class MainForm
         'ZoomToFitToolStripMenuItem
         '
         Me.ZoomToFitToolStripMenuItem.Name = "ZoomToFitToolStripMenuItem"
-        Me.ZoomToFitToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
-        Me.ZoomToFitToolStripMenuItem.Text = "Zoom to Fit"
+        Me.ZoomToFitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ZoomToFitToolStripMenuItem.Text = "Initial Size"
         '
         'ZoomToInToolStripMenuItem
         '
         Me.ZoomToInToolStripMenuItem.Name = "ZoomToInToolStripMenuItem"
-        Me.ZoomToInToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.ZoomToInToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ZoomToInToolStripMenuItem.Text = "Zoom to In"
         '
         'ZoomToOutToolStripMenuItem
         '
         Me.ZoomToOutToolStripMenuItem.Name = "ZoomToOutToolStripMenuItem"
-        Me.ZoomToOutToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.ZoomToOutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ZoomToOutToolStripMenuItem.Text = "Zoom to Out"
         '
         'RightRotateToolStripMenuItem
         '
         Me.RightRotateToolStripMenuItem.Name = "RightRotateToolStripMenuItem"
-        Me.RightRotateToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.RightRotateToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RightRotateToolStripMenuItem.Text = "Right Rotate"
         '
         'LeftRotateToolStripMenuItem
         '
         Me.LeftRotateToolStripMenuItem.Name = "LeftRotateToolStripMenuItem"
-        Me.LeftRotateToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.LeftRotateToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LeftRotateToolStripMenuItem.Text = "Left Rotate"
         '
         'ToolsToolStripMenuItem
@@ -172,10 +174,10 @@ Partial Class MainForm
         '
         'AnalysisToolStripMenuItem
         '
-        Me.AnalysisToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NeighborhoodFilterToolStripMenuItem})
+        Me.AnalysisToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NeighborhoodFilterToolStripMenuItem, Me.InvertToolStripMenuItem, Me.HistogramToolStripMenuItem})
         Me.AnalysisToolStripMenuItem.Name = "AnalysisToolStripMenuItem"
-        Me.AnalysisToolStripMenuItem.Size = New System.Drawing.Size(91, 20)
-        Me.AnalysisToolStripMenuItem.Text = "Filter Analysis"
+        Me.AnalysisToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
+        Me.AnalysisToolStripMenuItem.Text = "Analysis"
         '
         'NeighborhoodFilterToolStripMenuItem
         '
@@ -196,6 +198,18 @@ Partial Class MainForm
         Me.MedianFilterToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.MedianFilterToolStripMenuItem.Text = "Median Filter"
         '
+        'InvertToolStripMenuItem
+        '
+        Me.InvertToolStripMenuItem.Name = "InvertToolStripMenuItem"
+        Me.InvertToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.InvertToolStripMenuItem.Text = "Invert"
+        '
+        'HistogramToolStripMenuItem
+        '
+        Me.HistogramToolStripMenuItem.Name = "HistogramToolStripMenuItem"
+        Me.HistogramToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.HistogramToolStripMenuItem.Text = "Histogram"
+        '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PUIPHelpToolStripMenuItem, Me.AboutPUIPToolStripMenuItem})
@@ -206,13 +220,13 @@ Partial Class MainForm
         'PUIPHelpToolStripMenuItem
         '
         Me.PUIPHelpToolStripMenuItem.Name = "PUIPHelpToolStripMenuItem"
-        Me.PUIPHelpToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PUIPHelpToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.PUIPHelpToolStripMenuItem.Text = "PUIP help"
         '
         'AboutPUIPToolStripMenuItem
         '
         Me.AboutPUIPToolStripMenuItem.Name = "AboutPUIPToolStripMenuItem"
-        Me.AboutPUIPToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutPUIPToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.AboutPUIPToolStripMenuItem.Text = "About PUIP"
         '
         'OpenFileDialog1
@@ -278,7 +292,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MainForm"
-        Me.Text = "PU Image Process Tool"
+        Me.Text = " "
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.PicImage, System.ComponentModel.ISupportInitialize).EndInit()
@@ -321,4 +335,6 @@ Partial Class MainForm
     Friend WithEvents NeighborhoodFilterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MeanFilterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MedianFilterToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents InvertToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HistogramToolStripMenuItem As ToolStripMenuItem
 End Class
