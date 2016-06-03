@@ -1,0 +1,83 @@
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+\\icnas1.cc.ic.ac.uk\sf2715\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.MainForm.resources
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbprojResolveAssemblyReference.cache
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.MainForm.resources
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Histogram.resources
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.DebuggerVisualizers.VS2015.dll
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.dll
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.GL.dll
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.World.dll
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\ZedGraph.dll
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.xml
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.GL.xml
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.World.xml
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.xml
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\ZedGraph.xml
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\bin\Debug\zh-CN\ZedGraph.resources.dll
+\\icnas1.cc.ic.ac.uk\sf2715\Desktop\WindowsApplication1-2016-05-23\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.ImageForm.resources
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+D:\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+D:\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+D:\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+D:\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.MainForm.resources
+D:\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+D:\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.DebuggerVisualizers.VS2015.dll
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.dll
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.GL.dll
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.World.dll
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\ZedGraph.dll
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.xml
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.GL.xml
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.World.xml
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.xml
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\ZedGraph.xml
+D:\WindowsApplication1\WindowsApplication1\bin\Debug\zh-CN\ZedGraph.resources.dll
+D:\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Brightness.resources
+D:\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Contrast.resources
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.DebuggerVisualizers.VS2015.dll
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.dll
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.GL.dll
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.World.dll
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\ZedGraph.dll
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.xml
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.UI.GL.xml
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\Emgu.CV.World.xml
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.xml
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\ZedGraph.xml
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\bin\Debug\zh-CN\ZedGraph.resources.dll
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Brightness.resources
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Contrast.resources
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.MainForm.resources
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
