@@ -11,8 +11,6 @@
 
         Dim mapclone As Bitmap = MainForm.bitmaps.Clone
         Dim r, g, b, j As Integer
-        MainForm.ProgressBar1.Value = 0
-        MainForm.ProgressBar1.Maximum = MainForm.bitmaps.Height
 
         Dim hist(255) As Integer
         j = TrackBar1.Value
@@ -36,42 +34,30 @@
 
                 mapclone.SetPixel(x, y, Color.FromArgb(hist(r), hist(g), hist(b)))
             Next
-            MainForm.ProgressBar1.Value = MainForm.ProgressBar1.Value + 1
         Next
-        MainForm.PicImage.Image = mapclone
-        MainForm.PicImage.Refresh()
-        Me.Close()
-
-        bitmap_hist()
-        MainForm.Refresh()
+        brightImage.Image = mapclone
+        brightImage.Refresh()
     End Sub
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim dlg As New SaveFileDialog
 
-    Sub bitmap_hist()
+        dlg.Filter = "PNG Files (.png)|*.png|BMP Files (.bmp)|*.bmp|JPEG Files (.jpg)|*.jpg"
+        dlg.FilterIndex = 1
+        dlg.RestoreDirectory = True
 
-        Dim histR(255), histB(255), histG(255) As Integer
+        If dlg.ShowDialog() = DialogResult.OK Then
+            If Len(dlg.FileName) = 0 Then Exit Sub
 
-        Dim pic As Bitmap = MainForm.PicImage.Image
-        Dim pic1 As Bitmap = New Bitmap(pic.Width, pic.Height)
-        Dim R, G, B As Integer
-
-        For i As Integer = 0 To 255
-            histR(i) = 0
-            histG(i) = 0
-            histB(i) = 0
-        Next
-
-        For x As Integer = 0 To MainForm.PicImage.Image.Width - 1
-            For y As Integer = 0 To MainForm.PicImage.Image.Height - 1
-                R = pic.GetPixel(x, y).R
-                G = pic.GetPixel(x, y).G
-                B = pic.GetPixel(x, y).B
-                histR(R) = histR(R) + 1
-                histG(G) = histG(G) + 1
-                histB(B) = histB(B) + 1
-            Next
-        Next
+            Select Case dlg.FilterIndex
+                Case 1
+                    brightImage.Image.Save(dlg.FileName, Imaging.ImageFormat.Png)
+                Case 2
+                    brightImage.Image.Save(dlg.FileName, Imaging.ImageFormat.Bmp)
+                Case 3
+                    brightImage.Image.Save(dlg.FileName, Imaging.ImageFormat.Jpeg)
+            End Select
+        End If
 
     End Sub
-
 End Class

@@ -94,6 +94,12 @@
     <Compile Include="Contrast.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Emboss.Designer.vb">
+      <DependentUpon>Emboss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Emboss.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     <EmbeddedResource Include="Contrast.resx">
       <DependentUpon>Contrast.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Emboss.resx">
+      <DependentUpon>Emboss.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +156,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resource\zoomout.png" />
+    <None Include="Resource\zoomin.png" />
+    <None Include="Resource\reset.png" />
+    <None Include="Resource\fit.png" />
+    <None Include="Resource\png.png" />
+    <None Include="Resource\redo.png" />
+    <None Include="Resource\save.png" />
+    <None Include="Resource\surgeon.png" />
+    <None Include="Resource\undo.png" />
+    <None Include="Resource\exit.png" />
+    <None Include="Resource\leftrotate.png" />
+    <None Include="Resource\rightrotate.png" />
+    <None Include="Resource\camera.png" />
+    <None Include="Resource\help.png" />
     <Content Include="Resource\zoom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

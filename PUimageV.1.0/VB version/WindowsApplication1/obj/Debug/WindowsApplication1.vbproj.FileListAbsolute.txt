@@ -81,3 +81,5 @@ D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsAppli
 D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.MainForm.resources
 D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
 D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbprojResolveAssemblyReference.cache
+D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Emboss.resources

@@ -12,9 +12,6 @@
         Dim r, g, b As Integer
         Dim pr As Integer
 
-        MainForm.ProgressBar1.Value = 0
-        MainForm.ProgressBar1.Maximum = MainForm.bitmaps.Height
-
         Dim lut(255) As Integer
         pr = TrackBar1.Value
 
@@ -30,7 +27,6 @@
 
         Next
 
-
         For y As Integer = 0 To bitclone.Height - 1
             For x As Integer = 0 To bitclone.Width - 1
                 r = bitclone.GetPixel(x, y).R
@@ -40,11 +36,30 @@
                 bitclone.SetPixel(x, y, Color.FromArgb(lut(r), lut(g), lut(b)))
 
             Next
-            MainForm.ProgressBar1.Value = MainForm.ProgressBar1.Value + 1
         Next
-        MainForm.PicImage.Image = bitclone
-        MainForm.PicImage.Refresh()
+        ContrastImage.Image = bitclone
+        ContrastImage.Refresh()
 
-        Me.Close()
+    End Sub
+
+    Private Sub save_Click(sender As Object, e As EventArgs) Handles save.Click
+        Dim dlg As New SaveFileDialog
+
+        dlg.Filter = "PNG Files (.png)|*.png|BMP Files (.bmp)|*.bmp|JPEG Files (.jpg)|*.jpg"
+        dlg.FilterIndex = 1
+        dlg.RestoreDirectory = True
+
+        If dlg.ShowDialog() = DialogResult.OK Then
+            If Len(dlg.FileName) = 0 Then Exit Sub
+
+            Select Case dlg.FilterIndex
+                Case 1
+                    ContrastImage.Image.Save(dlg.FileName, Imaging.ImageFormat.Png)
+                Case 2
+                    ContrastImage.Image.Save(dlg.FileName, Imaging.ImageFormat.Bmp)
+                Case 3
+                    ContrastImage.Image.Save(dlg.FileName, Imaging.ImageFormat.Jpeg)
+            End Select
+        End If
     End Sub
 End Class
