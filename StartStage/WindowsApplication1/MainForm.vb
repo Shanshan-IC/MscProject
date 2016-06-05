@@ -1,7 +1,5 @@
 ﻿Public Class MainForm
-    Public selectedImageForm As ImageForm
-
-
+    Public WithEvents mImage As New ImageClass
 
     Private Sub FileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FileToolStripMenuItem.Click
 
@@ -12,22 +10,9 @@
     End Sub
 
     Private Sub OpenAnImageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenAnImageToolStripMenuItem.Click
-        Dim dlg As New OpenFileDialog
-
-        dlg.Filter = "Image Files (.bmp,.jpg,.png)|*.bmp;*.jpg;*.png"
-        dlg.FilterIndex = 1
-        dlg.RestoreDirectory = True
-
-        If dlg.ShowDialog() = Windows.Forms.DialogResult.OK Then
-            If Len(dlg.FileName) = 0 Then Exit Sub
-
-            selectedImageForm = New ImageForm
-            selectedImageForm.MdiParent = Me.MdiParent
-
-            If selectedImageForm.ShowPicture(dlg.FileName) Then
-                selectedImageForm.Text = dlg.FileName
-
-            End If
+        If Me.OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            Dim FName As String = Me.OpenFileDialog1.FileName
+            Me.PicImage.ImageLocation = FName
         End If
 
     End Sub
@@ -42,33 +27,18 @@
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
 
-        If selectedImageForm Is Nothing Then Exit Sub
+        SaveImage.ShowDialog()
 
-        Dim dlg As New SaveFileDialog
+        If SaveImage.FileName > "" Then
+            PicImage.Image.Save(SaveImage.FileName)
 
-        dlg.Filter = "PNG Files (.png)|*.png|BMP Files (.bmp)|*.bmp|JPEG Files (.jpg)|*.jpg"
-        dlg.FilterIndex = 1
-        dlg.RestoreDirectory = True
-
-        If dlg.ShowDialog() = DialogResult.OK Then
-            If Len(dlg.FileName) = 0 Then Exit Sub
-
-            Select Case dlg.FilterIndex
-                Case 1
-                    selectedImageForm.ImageBox.Image.Save(dlg.FileName, Imaging.ImageFormat.Png)
-                Case 2
-                    selectedImageForm.ImageBox.Image.Save(dlg.FileName, Imaging.ImageFormat.Bmp)
-                Case 3
-                    selectedImageForm.ImageBox.Image.Save(dlg.FileName, Imaging.ImageFormat.Jpeg)
-            End Select
         End If
-
 
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
 
-        Me.Close()
+        End
 
     End Sub
 
@@ -77,7 +47,7 @@
     End Sub
 
     Private Sub AboutPUIPToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutPUIPToolStripMenuItem.Click
-        MsgBox("Pressure Ulcers Image Beta v 1.1 & Environment.NewLine" & "Recources could be gained from https: //github.com/Shanshan-IC/MscProject" & Environment.NewLine & Environment.NewLine & "Copyright © 2016 ShanshanFu", MsgBoxStyle.Information, "About")
+        MsgBox("ZAMN Editor Beta v 1.1 & Environment.NewLine" & "Recources could be gained from https: //github.com/Shanshan-IC/MscProject" & Environment.NewLine & Environment.NewLine & "Copyright © 2016 ShanshanFu", MsgBoxStyle.Information, "About")
     End Sub
 
 
@@ -147,17 +117,6 @@
     End Sub
 
     Private Sub MeanFilterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MeanFilterToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub InvertToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InvertToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub HistogramToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HistogramToolStripMenuItem.Click
-        Dim frmChild As New HistogramForm
-        frmChild.MdiParent = Me
-        frmChild.Show()
-
+        mImage.meanfilter(3, True)
     End Sub
 End Class

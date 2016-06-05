@@ -88,6 +88,12 @@
     <Compile Include="Brightness.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ColorBoard.Designer.vb">
+      <DependentUpon>ColorBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ColorBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Contrast.Designer.vb">
       <DependentUpon>Contrast.vb</DependentUpon>
     </Compile>
@@ -98,6 +104,18 @@
       <DependentUpon>Emboss.vb</DependentUpon>
     </Compile>
     <Compile Include="Emboss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper.Designer.vb">
+      <DependentUpon>Helper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RGB.Designer.vb">
+      <DependentUpon>RGB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RGB.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.vb">
@@ -127,11 +145,20 @@
     <EmbeddedResource Include="Brightness.resx">
       <DependentUpon>Brightness.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ColorBoard.resx">
+      <DependentUpon>ColorBoard.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contrast.resx">
       <DependentUpon>Contrast.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emboss.resx">
       <DependentUpon>Emboss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper.resx">
+      <DependentUpon>Helper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RGB.resx">
+      <DependentUpon>RGB.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
@@ -170,6 +197,18 @@
     <None Include="Resource\rightrotate.png" />
     <None Include="Resource\camera.png" />
     <None Include="Resource\help.png" />
+    <None Include="Resource\copy.png" />
+    <None Include="Resource\paste.png" />
+    <None Include="Resource\autoenhance.png" />
+    <None Include="Resource\brightness.png" />
+    <None Include="Resource\contrast.png" />
+    <None Include="Resource\histogram.png" />
+    <None Include="Resource\colorbalance.png" />
+    <None Include="Resource\RGB.png" />
+    <None Include="Resource\invert.png" />
+    <None Include="Resource\negative.png" />
+    <None Include="Resource\gray.png" />
+    <None Include="Resource\enhance.png" />
     <Content Include="Resource\zoom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -27,29 +27,11 @@ Partial Class MainForm
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UndoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RedoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CopyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PasteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AnalysisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AutoEnhanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContrastToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GrayShadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BrightenssToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HistogramBalanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AverageFilterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ColorContrastToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SimpleSmoothingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NeonToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SharpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmbossToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MosaicToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExposureUnbalancedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NegativeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EnhanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TwowayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AverageFilterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SimpleSmoothingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveImage = New System.Windows.Forms.SaveFileDialog()
@@ -78,10 +60,15 @@ Partial Class MainForm
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
         Me.PicImage = New System.Windows.Forms.PictureBox()
         Me.OpenAnImageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UndoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RedoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PasteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ZoomToFitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ZoomToInToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -89,6 +76,18 @@ Partial Class MainForm
         Me.FitToScreenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RightRotateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LeftRotateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AutoEnhanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContrastToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BrightenssToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColorContrastToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HistogramBalanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColorBalanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InvertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InvertToRGBToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InvertToToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImageEnhancementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GrayShadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PUIPHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutPUIPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
@@ -98,7 +97,7 @@ Partial Class MainForm
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditorToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AnalysisToolStripMenuItem, Me.EnhanceToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditorToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AnalysisToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
@@ -120,30 +119,6 @@ Partial Class MainForm
         Me.EditorToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
         Me.EditorToolStripMenuItem.Text = "Editor"
         '
-        'UndoToolStripMenuItem
-        '
-        Me.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem"
-        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
-        Me.UndoToolStripMenuItem.Text = "Undo"
-        '
-        'RedoToolStripMenuItem
-        '
-        Me.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem"
-        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
-        Me.RedoToolStripMenuItem.Text = "Redo"
-        '
-        'CopyToolStripMenuItem
-        '
-        Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
-        Me.CopyToolStripMenuItem.Text = "Copy"
-        '
-        'PasteToolStripMenuItem
-        '
-        Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
-        Me.PasteToolStripMenuItem.Text = "Paste"
-        '
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ZoomToFitToolStripMenuItem, Me.ZoomToInToolStripMenuItem, Me.ZoomToOutToolStripMenuItem, Me.FitToScreenToolStripMenuItem, Me.RightRotateToolStripMenuItem, Me.LeftRotateToolStripMenuItem})
@@ -153,77 +128,10 @@ Partial Class MainForm
         '
         'AnalysisToolStripMenuItem
         '
-        Me.AnalysisToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AutoEnhanceToolStripMenuItem, Me.BrightenssToolStripMenuItem, Me.ColorContrastToolStripMenuItem, Me.EmbossToolStripMenuItem, Me.HistogramBalanceToolStripMenuItem, Me.NegativeToolStripMenuItem, Me.AverageFilterToolStripMenuItem, Me.SimpleSmoothingToolStripMenuItem, Me.GrayShadeToolStripMenuItem, Me.NeonToolStripMenuItem, Me.SharpenToolStripMenuItem, Me.MosaicToolStripMenuItem, Me.ExposureUnbalancedToolStripMenuItem})
+        Me.AnalysisToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AutoEnhanceToolStripMenuItem, Me.BrightenssToolStripMenuItem, Me.ColorContrastToolStripMenuItem, Me.EmbossToolStripMenuItem, Me.HistogramBalanceToolStripMenuItem, Me.ColorBalanceToolStripMenuItem, Me.InvertToolStripMenuItem, Me.ImageEnhancementToolStripMenuItem, Me.AverageFilterToolStripMenuItem, Me.SimpleSmoothingToolStripMenuItem, Me.GrayShadeToolStripMenuItem})
         Me.AnalysisToolStripMenuItem.Name = "AnalysisToolStripMenuItem"
         Me.AnalysisToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
         Me.AnalysisToolStripMenuItem.Text = "Adjustments"
-        '
-        'AutoEnhanceToolStripMenuItem
-        '
-        Me.AutoEnhanceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ColorToolStripMenuItem, Me.ContrastToolStripMenuItem})
-        Me.AutoEnhanceToolStripMenuItem.Name = "AutoEnhanceToolStripMenuItem"
-        Me.AutoEnhanceToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.AutoEnhanceToolStripMenuItem.Text = "Auto Enhance"
-        '
-        'ColorToolStripMenuItem
-        '
-        Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
-        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
-        Me.ColorToolStripMenuItem.Text = "Brightness"
-        '
-        'ContrastToolStripMenuItem
-        '
-        Me.ContrastToolStripMenuItem.Name = "ContrastToolStripMenuItem"
-        Me.ContrastToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
-        Me.ContrastToolStripMenuItem.Text = "Contrast"
-        '
-        'GrayShadeToolStripMenuItem
-        '
-        Me.GrayShadeToolStripMenuItem.Name = "GrayShadeToolStripMenuItem"
-        Me.GrayShadeToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.GrayShadeToolStripMenuItem.Text = "Gray Shade"
-        '
-        'BrightenssToolStripMenuItem
-        '
-        Me.BrightenssToolStripMenuItem.Name = "BrightenssToolStripMenuItem"
-        Me.BrightenssToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.BrightenssToolStripMenuItem.Text = "Brightenss"
-        '
-        'HistogramBalanceToolStripMenuItem
-        '
-        Me.HistogramBalanceToolStripMenuItem.Name = "HistogramBalanceToolStripMenuItem"
-        Me.HistogramBalanceToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.HistogramBalanceToolStripMenuItem.Text = "Histogram equalization"
-        '
-        'AverageFilterToolStripMenuItem
-        '
-        Me.AverageFilterToolStripMenuItem.Name = "AverageFilterToolStripMenuItem"
-        Me.AverageFilterToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.AverageFilterToolStripMenuItem.Text = "Average Filter"
-        '
-        'ColorContrastToolStripMenuItem
-        '
-        Me.ColorContrastToolStripMenuItem.Name = "ColorContrastToolStripMenuItem"
-        Me.ColorContrastToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.ColorContrastToolStripMenuItem.Text = "Contrast"
-        '
-        'SimpleSmoothingToolStripMenuItem
-        '
-        Me.SimpleSmoothingToolStripMenuItem.Name = "SimpleSmoothingToolStripMenuItem"
-        Me.SimpleSmoothingToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.SimpleSmoothingToolStripMenuItem.Text = "Simple Smoothing"
-        '
-        'NeonToolStripMenuItem
-        '
-        Me.NeonToolStripMenuItem.Name = "NeonToolStripMenuItem"
-        Me.NeonToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.NeonToolStripMenuItem.Text = "Neon"
-        '
-        'SharpenToolStripMenuItem
-        '
-        Me.SharpenToolStripMenuItem.Name = "SharpenToolStripMenuItem"
-        Me.SharpenToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.SharpenToolStripMenuItem.Text = "Sharpen"
         '
         'EmbossToolStripMenuItem
         '
@@ -231,36 +139,17 @@ Partial Class MainForm
         Me.EmbossToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.EmbossToolStripMenuItem.Text = "Emboss"
         '
-        'MosaicToolStripMenuItem
+        'AverageFilterToolStripMenuItem
         '
-        Me.MosaicToolStripMenuItem.Name = "MosaicToolStripMenuItem"
-        Me.MosaicToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.MosaicToolStripMenuItem.Text = "Mosaic"
+        Me.AverageFilterToolStripMenuItem.Name = "AverageFilterToolStripMenuItem"
+        Me.AverageFilterToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.AverageFilterToolStripMenuItem.Text = "Average Filter"
         '
-        'ExposureUnbalancedToolStripMenuItem
+        'SimpleSmoothingToolStripMenuItem
         '
-        Me.ExposureUnbalancedToolStripMenuItem.Name = "ExposureUnbalancedToolStripMenuItem"
-        Me.ExposureUnbalancedToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.ExposureUnbalancedToolStripMenuItem.Text = "Exposure Unbalanced"
-        '
-        'NegativeToolStripMenuItem
-        '
-        Me.NegativeToolStripMenuItem.Name = "NegativeToolStripMenuItem"
-        Me.NegativeToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.NegativeToolStripMenuItem.Text = "Negative"
-        '
-        'EnhanceToolStripMenuItem
-        '
-        Me.EnhanceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TwowayToolStripMenuItem})
-        Me.EnhanceToolStripMenuItem.Name = "EnhanceToolStripMenuItem"
-        Me.EnhanceToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
-        Me.EnhanceToolStripMenuItem.Text = "Enhance"
-        '
-        'TwowayToolStripMenuItem
-        '
-        Me.TwowayToolStripMenuItem.Name = "TwowayToolStripMenuItem"
-        Me.TwowayToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
-        Me.TwowayToolStripMenuItem.Text = "Two-way"
+        Me.SimpleSmoothingToolStripMenuItem.Name = "SimpleSmoothingToolStripMenuItem"
+        Me.SimpleSmoothingToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.SimpleSmoothingToolStripMenuItem.Text = "Simple Smoothing"
         '
         'HelpToolStripMenuItem
         '
@@ -326,7 +215,7 @@ Partial Class MainForm
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripButton5, Me.ToolStripButton6, Me.ToolStripDropDownButton1, Me.ToolStripButton7})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripButton5, Me.ToolStripButton6, Me.ToolStripDropDownButton1, Me.ToolStripButton7, Me.ToolStripButton8})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 24)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1182, 25)
@@ -341,7 +230,7 @@ Partial Class MainForm
         Me.ToolStripButton1.Name = "ToolStripButton1"
         Me.ToolStripButton1.RightToLeftAutoMirrorImage = True
         Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton1.Text = "ToolStripButton1"
+        Me.ToolStripButton1.Text = "Open an image"
         '
         'ToolStripButton2
         '
@@ -350,7 +239,7 @@ Partial Class MainForm
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
         Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton2.Text = "ToolStripButton2"
+        Me.ToolStripButton2.Text = "save"
         '
         'ToolStripButton3
         '
@@ -359,7 +248,7 @@ Partial Class MainForm
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
         Me.ToolStripButton3.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton3.Text = "ToolStripButton3"
+        Me.ToolStripButton3.Text = "redo"
         '
         'ToolStripButton4
         '
@@ -368,7 +257,7 @@ Partial Class MainForm
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
         Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton4.Text = "ToolStripButton4"
+        Me.ToolStripButton4.Text = "undo"
         '
         'ToolStripButton5
         '
@@ -377,7 +266,7 @@ Partial Class MainForm
         Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton5.Name = "ToolStripButton5"
         Me.ToolStripButton5.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton5.Text = "ToolStripButton5"
+        Me.ToolStripButton5.Text = "zoom out"
         '
         'ToolStripButton6
         '
@@ -386,7 +275,7 @@ Partial Class MainForm
         Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton6.Name = "ToolStripButton6"
         Me.ToolStripButton6.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton6.Text = "ToolStripButton6"
+        Me.ToolStripButton6.Text = "zoom in"
         '
         'ToolStripDropDownButton1
         '
@@ -401,55 +290,55 @@ Partial Class MainForm
         'FitScreenToolStripMenuItem
         '
         Me.FitScreenToolStripMenuItem.Name = "FitScreenToolStripMenuItem"
-        Me.FitScreenToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.FitScreenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FitScreenToolStripMenuItem.Text = "Fit Screen"
         '
         'FitWidthToolStripMenuItem
         '
         Me.FitWidthToolStripMenuItem.Name = "FitWidthToolStripMenuItem"
-        Me.FitWidthToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.FitWidthToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FitWidthToolStripMenuItem.Text = "Fit Width"
         '
         'FitHeightToolStripMenuItem
         '
         Me.FitHeightToolStripMenuItem.Name = "FitHeightToolStripMenuItem"
-        Me.FitHeightToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.FitHeightToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FitHeightToolStripMenuItem.Text = "Fit Height"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(126, 22)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem2.Text = "100%"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(126, 22)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem3.Text = "80%"
         '
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(126, 22)
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem4.Text = "60%"
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(126, 22)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem5.Text = "40%"
         '
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(126, 22)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem6.Text = "20%"
         '
         'ToolStripMenuItem7
         '
         Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(126, 22)
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem7.Text = "10%"
         '
         'ToolStripButton7
@@ -459,10 +348,20 @@ Partial Class MainForm
         Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton7.Name = "ToolStripButton7"
         Me.ToolStripButton7.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton7.Text = "ToolStripButton7"
+        Me.ToolStripButton7.Text = "reset"
+        '
+        'ToolStripButton8
+        '
+        Me.ToolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton8.Image = Global.WindowsApplication1.My.Resources.Resources.help
+        Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton8.Name = "ToolStripButton8"
+        Me.ToolStripButton8.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton8.Text = "help"
         '
         'PicImage
         '
+        Me.PicImage.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.PicImage.Location = New System.Drawing.Point(16, 60)
         Me.PicImage.Margin = New System.Windows.Forms.Padding(4)
         Me.PicImage.Name = "PicImage"
@@ -491,6 +390,34 @@ Partial Class MainForm
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'UndoToolStripMenuItem
+        '
+        Me.UndoToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.undo
+        Me.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem"
+        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.UndoToolStripMenuItem.Text = "Undo"
+        '
+        'RedoToolStripMenuItem
+        '
+        Me.RedoToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.redo
+        Me.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem"
+        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.RedoToolStripMenuItem.Text = "Redo"
+        '
+        'CopyToolStripMenuItem
+        '
+        Me.CopyToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.copy
+        Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.CopyToolStripMenuItem.Text = "Copy"
+        '
+        'PasteToolStripMenuItem
+        '
+        Me.PasteToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.paste
+        Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.PasteToolStripMenuItem.Text = "Paste"
         '
         'ResetToolStripMenuItem
         '
@@ -541,18 +468,104 @@ Partial Class MainForm
         Me.LeftRotateToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.LeftRotateToolStripMenuItem.Text = "Left Rotate"
         '
+        'AutoEnhanceToolStripMenuItem
+        '
+        Me.AutoEnhanceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ColorToolStripMenuItem, Me.ContrastToolStripMenuItem})
+        Me.AutoEnhanceToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.autoenhance
+        Me.AutoEnhanceToolStripMenuItem.Name = "AutoEnhanceToolStripMenuItem"
+        Me.AutoEnhanceToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.AutoEnhanceToolStripMenuItem.Text = "Auto Enhance"
+        '
+        'ColorToolStripMenuItem
+        '
+        Me.ColorToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.brightness
+        Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
+        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
+        Me.ColorToolStripMenuItem.Text = "Brightness"
+        '
+        'ContrastToolStripMenuItem
+        '
+        Me.ContrastToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.contrast
+        Me.ContrastToolStripMenuItem.Name = "ContrastToolStripMenuItem"
+        Me.ContrastToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
+        Me.ContrastToolStripMenuItem.Text = "Contrast"
+        '
+        'BrightenssToolStripMenuItem
+        '
+        Me.BrightenssToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.brightness
+        Me.BrightenssToolStripMenuItem.Name = "BrightenssToolStripMenuItem"
+        Me.BrightenssToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.BrightenssToolStripMenuItem.Text = "Brightenss"
+        '
+        'ColorContrastToolStripMenuItem
+        '
+        Me.ColorContrastToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.contrast
+        Me.ColorContrastToolStripMenuItem.Name = "ColorContrastToolStripMenuItem"
+        Me.ColorContrastToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.ColorContrastToolStripMenuItem.Text = "Contrast"
+        '
+        'HistogramBalanceToolStripMenuItem
+        '
+        Me.HistogramBalanceToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.histogram
+        Me.HistogramBalanceToolStripMenuItem.Name = "HistogramBalanceToolStripMenuItem"
+        Me.HistogramBalanceToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.HistogramBalanceToolStripMenuItem.Text = "Histogram equalization"
+        '
+        'ColorBalanceToolStripMenuItem
+        '
+        Me.ColorBalanceToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.colorbalance
+        Me.ColorBalanceToolStripMenuItem.Name = "ColorBalanceToolStripMenuItem"
+        Me.ColorBalanceToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.ColorBalanceToolStripMenuItem.Text = "Color Balance"
+        '
+        'InvertToolStripMenuItem
+        '
+        Me.InvertToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InvertToRGBToolStripMenuItem, Me.InvertToToolStripMenuItem})
+        Me.InvertToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.invert
+        Me.InvertToolStripMenuItem.Name = "InvertToolStripMenuItem"
+        Me.InvertToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.InvertToolStripMenuItem.Text = "Invert"
+        '
+        'InvertToRGBToolStripMenuItem
+        '
+        Me.InvertToRGBToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.RGB
+        Me.InvertToRGBToolStripMenuItem.Name = "InvertToRGBToolStripMenuItem"
+        Me.InvertToRGBToolStripMenuItem.Size = New System.Drawing.Size(212, 22)
+        Me.InvertToRGBToolStripMenuItem.Text = "Invert to RGB"
+        '
+        'InvertToToolStripMenuItem
+        '
+        Me.InvertToToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.negative
+        Me.InvertToToolStripMenuItem.Name = "InvertToToolStripMenuItem"
+        Me.InvertToToolStripMenuItem.Size = New System.Drawing.Size(212, 22)
+        Me.InvertToToolStripMenuItem.Text = "Invert to CMYK (Negative)"
+        '
+        'ImageEnhancementToolStripMenuItem
+        '
+        Me.ImageEnhancementToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.enhance
+        Me.ImageEnhancementToolStripMenuItem.Name = "ImageEnhancementToolStripMenuItem"
+        Me.ImageEnhancementToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.ImageEnhancementToolStripMenuItem.Text = "Color Enhancement"
+        '
+        'GrayShadeToolStripMenuItem
+        '
+        Me.GrayShadeToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.gray
+        Me.GrayShadeToolStripMenuItem.Name = "GrayShadeToolStripMenuItem"
+        Me.GrayShadeToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.GrayShadeToolStripMenuItem.Text = "Gray Shade"
+        '
         'PUIPHelpToolStripMenuItem
         '
         Me.PUIPHelpToolStripMenuItem.Image = CType(resources.GetObject("PUIPHelpToolStripMenuItem.Image"), System.Drawing.Image)
         Me.PUIPHelpToolStripMenuItem.Name = "PUIPHelpToolStripMenuItem"
-        Me.PUIPHelpToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.PUIPHelpToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.PUIPHelpToolStripMenuItem.Text = "PUIP help"
         '
         'AboutPUIPToolStripMenuItem
         '
         Me.AboutPUIPToolStripMenuItem.Image = CType(resources.GetObject("AboutPUIPToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AboutPUIPToolStripMenuItem.Name = "AboutPUIPToolStripMenuItem"
-        Me.AboutPUIPToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.AboutPUIPToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AboutPUIPToolStripMenuItem.Text = "About PUIP"
         '
         'MainForm
@@ -617,13 +630,7 @@ Partial Class MainForm
     Friend WithEvents AverageFilterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ColorContrastToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SimpleSmoothingToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NeonToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SharpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmbossToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MosaicToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExposureUnbalancedToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EnhanceToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TwowayToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents ToolStripButton2 As ToolStripButton
@@ -649,5 +656,10 @@ Partial Class MainForm
     Friend WithEvents ResetToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ColorToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContrastToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NegativeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImageEnhancementToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents InvertToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents InvertToRGBToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents InvertToToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ColorBalanceToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripButton8 As ToolStripButton
 End Class

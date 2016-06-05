@@ -124,7 +124,8 @@
 
 
     Private Sub PUIPHelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PUIPHelpToolStripMenuItem.Click
-
+        Dim helpers = New Helper
+        helpers.Show()
     End Sub
 
 
@@ -361,7 +362,12 @@
     End Sub
 
     Private Sub CopyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click
-        'PictureBox2.Image = AxPictureClip1.Picture
+        If PicImage.Image Is Nothing Then
+            MessageBox.Show("There is no picture to copy.", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Clipboard.SetImage(PicImage.Image)
+        End If
     End Sub
 
     Private Sub SimpleSmoothingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SimpleSmoothingToolStripMenuItem.Click
@@ -401,143 +407,14 @@
 
     End Sub
 
-    Private Sub NeonToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NeonToolStripMenuItem.Click
-
-
-        Dim n As Short = 0
-        Dim pic1 As Bitmap = bitmaps.Clone
-        Dim r, g, b, r2, g2, b2, r3, g3, b3, rr, gg, bb As Integer
-        ProgressBar1.Value = 0
-        ProgressBar1.Maximum = bitmaps.Width
-
-        For x As Integer = 0 To pic1.Width - 2
-            For y As Integer = 0 To pic1.Height - 2
-
-                r = pic1.GetPixel(x, y).R
-                g = pic1.GetPixel(x, y).G
-                b = pic1.GetPixel(x, y).B
-
-                r2 = pic1.GetPixel(x + 1, y).R
-                g2 = pic1.GetPixel(x + 1, y).G
-                b2 = pic1.GetPixel(x + 1, y).B
-
-                r3 = pic1.GetPixel(x, y + 1).R
-                g3 = pic1.GetPixel(x, y + 1).G
-                b3 = pic1.GetPixel(x, y + 1).B
-
-                rr = 2 * ((r - r2) ^ 2 + (r - r3) ^ 2) ^ 0.5
-                gg = 2 * ((g - g2) ^ 2 + (g - g3) ^ 2) ^ 0.5
-                bb = 2 * ((b - b2) ^ 2 + (b - b3) ^ 2) ^ 0.5
-
-                If rr < 0 Then rr = 0
-                If rr > 255 Then rr = 255
-                If gg < 0 Then gg = 0
-                If gg > 255 Then gg = 255
-                If bb < 0 Then bb = 0
-                If bb > 255 Then bb = 255
-                pic1.SetPixel(x, y, Color.FromArgb(rr, gg, bb))
-
-            Next
-            ProgressBar1.Value = ProgressBar1.Value + 1
-        Next
-        PicImage.Image = pic1
-        PicImage.Refresh()
-        bitmap_hist()
-        Me.Refresh()
-
-
-    End Sub
-
-    'no very distinct effect
-    Private Sub SharpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SharpenToolStripMenuItem.Click
-        Dim mapclone As Bitmap = bitmaps.Clone
-        Dim r, g, b, r2, g2, b2, rr, gg, bb As Integer
-        ProgressBar1.Value = 0
-        ProgressBar1.Maximum = bitmaps.Height
-        For y As Integer = 1 To mapclone.Height - 1
-            For x As Integer = 1 To mapclone.Width - 1
-                r = mapclone.GetPixel(x, y).R
-                g = mapclone.GetPixel(x, y).G
-                b = mapclone.GetPixel(x, y).B
-
-                r2 = mapclone.GetPixel(x, y).R
-                g2 = mapclone.GetPixel(x, y).G
-                b2 = mapclone.GetPixel(x, y).B
-
-                rr = r + Math.Abs((r - r2) * 3)
-                gg = g + Math.Abs((g - g2) * 3)
-                bb = b + Math.Abs((b - b2) * 3)
-
-                If rr < 0 Then rr = 0
-                If rr > 255 Then rr = 255
-                If gg < 0 Then gg = 0
-                If gg > 255 Then gg = 255
-                If bb < 0 Then bb = 0
-                If bb > 255 Then bb = 255
-
-                mapclone.SetPixel(x, y, Color.FromArgb(rr, gg, bb))
-            Next
-            ProgressBar1.Value = ProgressBar1.Value + 1
-        Next
-        PicImage.Image = mapclone
-        PicImage.Refresh()
-
-        bitmap_hist()
-        Me.Refresh()
-    End Sub
-
     Private Sub EmbossToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmbossToolStripMenuItem.Click
         Dim emboss = New Emboss
         emboss.EmbossImage.Image = PicImage.Image
         emboss.Show()
     End Sub
 
-    Private Sub MosaicToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MosaicToolStripMenuItem.Click
-        Dim mapclone As Bitmap = bitmaps.Clone
-        Dim r, g, b, rr, gg, bb As Integer
-        ProgressBar1.Value = 0
-        ProgressBar1.Maximum = bitmaps.Width
-        r = 0 : g = 0 : b = 0
-        For y As Integer = 0 To mapclone.Height - 6 Step 5
-            For x As Integer = 0 To mapclone.Width - 6 Step 5
-                For k1 As Integer = 0 To 5
-                    For k2 As Integer = 0 To 5
-                        r = r + mapclone.GetPixel(x + k1, y + k2).R
-                        g = g + mapclone.GetPixel(x + k1, y + k2).G
-                        b = b + mapclone.GetPixel(x + k1, y + k2).B
-                    Next
-                Next
-                rr = r / 25
-                gg = g / 25
-                bb = b / 25
 
-                If rr < 0 Then rr = 0
-                If rr > 255 Then rr = 255
-                If gg < 0 Then gg = 0
-                If gg > 255 Then gg = 255
-                If bb < 0 Then bb = 0
-                If bb > 255 Then bb = 255
-                For k1 = 0 To 5
-                    For k2 = 0 To 5
-                        mapclone.SetPixel(x, y, Color.FromArgb(rr, gg, bb))
-                    Next
-                Next
-            Next
-
-            ProgressBar1.Value = ProgressBar1.Value + 1
-        Next
-        PicImage.Image = mapclone
-        PicImage.Refresh()
-
-        bitmap_hist()
-        Me.Refresh()
-    End Sub
-
-    Private Sub ExposureUnbalancedToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExposureUnbalancedToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub TwowayToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TwowayToolStripMenuItem.Click
+    Private Sub ExposureUnbalancedToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -736,7 +613,13 @@
 
     End Sub
 
-    Private Sub NegativeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NegativeToolStripMenuItem.Click
+    Private Sub ExposureToolStripMenuItem_Click(sender As Object, e As EventArgs)
+        Dim exposure = New RGB
+        exposure.rgbImage.Image = PicImage.Image
+        exposure.Show()
+    End Sub
+
+    Private Sub InvertToToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles InvertToToolStripMenuItem.Click
         Dim mapclone As Bitmap = bitmaps.Clone
         Dim r, g, b As Integer
         ProgressBar1.Value = 0
@@ -759,6 +642,23 @@
         PicImage.Refresh()
         bitmap_hist()
         Me.Refresh()
+    End Sub
+
+    Private Sub InvertToRGBToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InvertToRGBToolStripMenuItem.Click
+        Dim rgb = New RGB
+        rgb.rgbImage.Image = PicImage.Image
+        rgb.Show()
+    End Sub
+
+    Private Sub ColorBalanceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ColorBalanceToolStripMenuItem.Click
+        Dim colorboard = New ColorBoard
+        colorboard.ColorImage.Image = PicImage.Image
+        colorboard.Show()
+    End Sub
+
+    Private Sub ToolStripButton8_Click(sender As Object, e As EventArgs) Handles ToolStripButton8.Click
+        MsgBox("Pressure Ulcers Image Beta v 1.1 & Environment.NewLine" & "Recources could be gained from https: //github.com/Shanshan-IC/MscProject" & Environment.NewLine & Environment.NewLine & "Copyright © 2016 ShanshanFu", MsgBoxStyle.Information, "About")
+
     End Sub
 
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
