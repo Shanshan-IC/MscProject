@@ -40,7 +40,8 @@ Gray:
 
 There are more image process algorithm not tested yet.
 
-
+The more details will be included in helper later:
+![helper](https://cloud.githubusercontent.com/assets/15053464/15857459/7d1679a8-2cb3-11e6-8a2f-81e0bea16e2d.JPG)
 
 
 
