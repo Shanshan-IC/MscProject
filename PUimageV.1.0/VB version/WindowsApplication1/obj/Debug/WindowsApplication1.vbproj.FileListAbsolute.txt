@@ -86,7 +86,3 @@ D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsAppli
 D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.RGB.resources
 D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.ColorBoard.resources
 D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Helper.resources
-\\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
-\\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\obj\Debug\WindowsApplication1.exe
-\\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\obj\Debug\WindowsApplication1.xml
-\\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
