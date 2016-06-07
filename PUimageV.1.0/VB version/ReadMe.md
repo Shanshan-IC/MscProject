@@ -1,4 +1,5 @@
-PUimage v.1.0 is still unfinished yet.
+PUimage v.1.0 is still unfinished yet. 
+It is developed on Visual Studio 2015, using Visual Basic. More image processing methods details will be discussed in the final report.
 
 The basic windwos designed is:
 ![windows](https://cloud.githubusercontent.com/assets/15053464/15855326/c665a0dc-2ca6-11e6-8f0b-1e9e0d21efdd.JPG)
