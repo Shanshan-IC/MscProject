@@ -1,20 +1,64 @@
 \chapter{Background}
 \section{Pressure Ulcers}
-\indent A pressure ulcer (PU) is any lesion caused by unrelieved pressure resulting in damage of underlying tissue \cite{Wikipedia}. Pressure ulcers are areas of localized tissue destruction caused by compression of soft tissue between a bony prominence and an external surface for a prolonged period of time \cite{Treatment}. Unrelieved pressure and shear are the most important contributing factors in the pathogenesis.\\
-\indent In UK, nearly 700,000 people are affected by pressure ulcers each year, across all care settings, including patients in their own homes, with the most vulnerable of patients aged over 75. Around 186,617 patients develop a pressure ulcer in hospital each year \cite{NHS}. Given the aging of the population, PU are likely to become a problem of increasing proportion in the near future \cite{Maklebust}.\\
-\indent Pressure Ulcers are associated with significant economic burden, and costs continue to rise \cite{Allman}. The cost of treating a pressure ulcer varies from \pounds 1,064 to \pounds 10,551. Costs increase with ulcer grade because the time to heal is longer and because the incidence of complications is higher in more severe cases. The total cost in the UK is \pounds 1.4 \- \pounds 2.1 billion annually (4\% of total NHS expenditure) \cite{Bennett}. Pressure ulcers cost \textdollar 9.1 -\textdollar 11.6 billion per year with 2.5 million patients in the US. Cost of individual patient care ranges from \textdollar 20,900 to \textdollar 151,700 per pressure ulcer \cite{HumanService}. Pressure ulcers are not only costly, but are associated with increased mortality.\\
-\indent Therefore, these consequences highlight the value of the early detection of pressure ulcers. If pressure ulcers are detected in the early stage, simple care of the tissue can allow the skin to remain intact and heal without scarring or the need for surgical intervention. \\
-\indent According to the staging description of PU revised by International NPUAP- EPUAP Pressure Ulcer \cite{Epuap}, stage I PU presents as Intact skin with non-blanchable erythema of a localized area usually over a bony prominence. Discoloration of the skin, warmth, edema, hardness or pain may also be present. Darkly pigmented skin may not have visible blanching. And Stage I may be difficult to detect in individuals with dark skin tones due to increased melanin content. 
+A pressure ulcer (PU) is any lesion caused by unrelieved pressure resulting in damage of underlying tissue \cite{Wikipedia}. Pressure ulcers are areas of localized tissue destruction caused by compression of soft tissue between a bony prominence and an external surface for a prolonged period of time \cite{Treatment}. Unrelieved pressure and shear are the most important contributing factors in the pathogenesis.\\
+
+In UK, nearly 700,000 people are affected by pressure ulcers each year, across all care settings, including patients in their own homes, with the most vulnerable of patients aged over 75. Around 186,617 patients develop a pressure ulcer in hospital each year \cite{NHS}. Given the aging of the population, PU are likely to become a problem of increasing proportion in the near future \cite{Maklebust}.\\
+
+Pressure Ulcers are associated with significant economic burden, and costs continue to rise \cite{Allman}. The cost of treating a pressure ulcer varies from \pounds 1,064 to \pounds 10,551. Costs increase with ulcer grade because the time to heal is longer and because the incidence of complications is higher in more severe cases. The total cost in the UK is \pounds 1.4 \- \pounds 2.1 billion annually (4\% of total NHS expenditure) \cite{Bennett}. Pressure ulcers cost \textdollar 9.1 -\textdollar 11.6 billion per year with 2.5 million patients in the US. Cost of individual patient care ranges from \textdollar 20,900 to \textdollar 151,700 per pressure ulcer \cite{HumanService}. Pressure ulcers are not only costly, but are associated with increased mortality.\\
+
+Therefore, these consequences highlight the value of the early detection of pressure ulcers. If pressure ulcers are detected in the early stage, simple care of the tissue can allow the skin to remain intact and heal without scarring or the need for surgical intervention. \\
+
+According to the staging description of PU revised by International NPUAP- EPUAP Pressure Ulcer \cite{Epuap}, stage I PU presents as Intact skin with non-blanchable erythema of a localized area usually over a bony prominence. Discoloration of the skin, warmth, edema, hardness or pain may also be present. Darkly pigmented skin may not have visible blanching. And Stage I may be difficult to detect in individuals with dark skin tones due to increased melanin content. 
 
 \section{Related Research}
 Main issues regarding proper characterization of skin lesions consists of image acquisition, the image processing and analysis, the feature extraction, and the classification methodology \cite{Patel}. Major advantage of using computer is that patients do not have to undergo many painful diagnosing techniques. Moreover it speeds up the procedure of diagnosis of the disease according to the processed images of skin. There are several previous studies to show what techniques are used to improve the early detection of pressure ulcers.\\
-\indent Image processing and computational techniques have been applied in different aspects of wound diagnosis. Some aspects involve wound-area identification, which has been tackled with different techniques such as contour detection with
-histogram segmentation, active contours modelling, region growing, clustering approaches or skin texture models \cite{Cula} \cite{Jones} \cite{Karkanis}. Some approaches focus on
-detecting the different tissues existing in the wound, by using diverse segmentation methods—such as histogram thresholding, watersheds, mean-shift smoothing, region growing, classification or graphs—sometimes combined with machine learning strategies \cite{Kosmopoulos} \cite{Veredas} \cite{Wannous} \cite{Treuillet}.\\
-\indent Erythema can be detected with relatively simple and low-cost imaging and image enhancement techniques at pressure ulcers stage I, which was suggested by Prabhu Jude Rajendran. They used CLAHE algorithm and the preliminary results clearly indicate that the enhanced images exhibit higher contrast and make the pressure ulcer site more conspicuous to the examiner \cite{Rajendran}.\\
-\indent Jon Leachtenauer research group used a non-contact imaging-based method to detect Stage I pressure ulcers over a wide range of melanin levels. Two approaches were explored: the first used broad and narrow band visible spectrum imaging, and the second used near infrared (NIR) imaging. The results are presented together with results of numerical analysis of different erythema indices derived from the visible spectrum images \cite{Leachtenauer}. \\
-\indent A study at the University Hospital of University of Sao Paulo revealed a pressure ulcers incidence of 39.8\% \cite{Rogenski}, and the evolution of healing process is followed by measuring PU using simple measures, tracing, photographs or image analysis by a computational system, which is sup ported by softwares Motic and AutoCAD \cite{minister}.\\
-\indent R.Guadagnin, R. de S. Neves et al initially captured images by digital camera. Each image was separated in the images that correspond to blue, green and red bands. They then performed convolution on each image with a 9x9 mean mask with Idrisi Software to remove distortion due to texture peculiarities as it may happen that due to texture peculiarities isolated points distort parts of the images that belong to healthy skin, pressure border or pressure core \cite{Santana}. \\
-\indent Hairong Qi et al. describe a custom geometric correction method to restore the image from the misalignment distortion and present a binary tree-based generic demosaicking algorithm to efficiently estimate the missing special components
+
+Image processing and computational techniques have been applied in different aspects of wound diagnosis. Some aspects involve wound-area identification, which has been tackled with different techniques such as contour detection with
+histogram segmentation, active contours modelling, region growing, clustering approaches or skin texture models.\\
+
+Cula and Kristin developed two models for use in skin texture recognition. Both models are image-based representations of skin
+appearance that are suitably descriptive without the need for prohibitively complex physics-based skin models, which take into account the varied appearance of the skin with changes in illumination and viewing direction \cite{Cula}.\\
+
+Tim D. Jones and Peter Plassmann used an active contour model is presented that models the contour using piecewise B-spline arcs and uses the minimax principle
+to adaptively regularize the contour according to the local conditions in the wound image. The model makes use of the existing manual delineation process in order to initialize the solution and is shown to reduce the effect of the inherent variations upon the repeatability and consistency of area measurements in many cases.\cite{Jones}\\
+
+Karkanis presented an approach to the detection of tumors
+in colonoscopic video. It is based on a new color feature extraction scheme to represent the different regions in the frame sequence. This scheme is built on the wavelet decomposition. The features named as color wavelet covariance are based on the covariances of second-order textural measures and an optimum subset
+of them is proposed after the application of a selection algorithm.
+The proposed approach is supported by a linear discriminant analysis procedure for the characterization of the image regions
+along the video frames. The whole methodology has been applied
+on real data sets of color colonoscopic videos. The performance in
+the detection of abnormal colonic regions corresponding to adenomatous
+polyps has been estimated high, reaching 97\% specificity
+and 90\% sensitivity \cite{Karkanis}.\\
+
+Some approaches focus on detecting the different tissues existing in the wound, by using diverse segmentation methods—such as histogram thresholding, watersheds, mean-shift smoothing, region growing, classification or graphs—sometimes combined with machine learning strategies. \\
+
+Dimitrios I. Kosmopoulos investigated how a tool for automated pressure ulcer stage classification can be integrated into an asynchronous telemedicine system aiming to increase efficiency and monitoring capabilities for large volumes of patient
+data. The deployment requirements, the internal architecture as well as the employed
+techniques are outlined. Furthermore, the initial processing results are provided to
+demonstrate the feasibility of automated classification of pressure ulcer regions in various grades \cite{Kosmopoulos}.\\
+
+Francisco Veredas proposed a hybrid approach based on neural networks and Bayesian
+classifiers is used in the design of a computational system for automatic tissue identification in wound images. Specific heuristics based on the wound topology are designed to significantly improve the results of the classification. This method obtains high efficiency rates from a binary cascade approach for tissue identification. Results are compared with other similar machine-learning approaches, including multiclass Bayesian committee machine classifiers and support vector machines \cite{Veredas}. \\
+
+Hazem Wannous and Sylvie Treuillet introduced the key steps including color correction, merging of expert labeling, and segmentation-driven classification based on support vector machines. The tool thus developed ensures stability under lighting condition,
+viewpoint, and camera changes, to achieve accurate and robust classification of skin tissues. Clinical tests demonstrate that such an advanced tool, which forms part of a complete 3-D and color wound assessment system, significantly improves the monitoring
+of the healing process. It achieves an overlap score of 79.3 against 69.1\% for a single expert, after mapping on the medical reference developed from the image labeling by a college of experts \cite{Wannous}.\\
+
+Hazem Wannous and  Yves Lucas focused here on tissue classification from color and texture region descriptors computed after unsupervised segmentation. With a multiview strategy for tissue classification, relying on a 3-D model onto which tissue labels
+are mapped and classification results merged. The experimental classification tests demonstrate that enhanced repeatability and robustness are obtained and that metric assessment is achieved through real area and volume measurements and wound outline
+extraction \cite{Treuillet}. \\
+
+Erythema can be detected with relatively simple and low-cost imaging and image enhancement techniques at pressure ulcers stage I, which was suggested by Prabhu Jude Rajendran. They used CLAHE algorithm and the preliminary results clearly indicate that the enhanced images exhibit higher contrast and make the pressure ulcer site more conspicuous to the examiner \cite{Rajendran}.\\
+
+Jon Leachtenauer research group used a non-contact imaging-based method to detect Stage I pressure ulcers over a wide range of melanin levels. Two approaches were explored: the first used broad and narrow band visible spectrum imaging, and the second used near infrared (NIR) imaging. The results are presented together with results of numerical analysis of different erythema indices derived from the visible spectrum images \cite{Leachtenauer}. \\
+
+A study at the University Hospital of University of Sao Paulo revealed a pressure ulcers incidence of 39.8\% \cite{Rogenski}, and the evolution of healing process is followed by measuring PU using simple measures, tracing, photographs or image analysis by a computational system, which is sup ported by softwares Motic and AutoCAD \cite{minister}.\\
+
+R.Guadagnin, R. de S. Neves et al initially captured images by digital camera. Each image was separated in the images that correspond to blue, green and red bands. They then performed convolution on each image with a 9x9 mean mask with Idrisi Software to remove distortion due to texture peculiarities as it may happen that due to texture peculiarities isolated points distort parts of the images that belong to healthy skin, pressure border or pressure core \cite{Santana}. \\
+
+Hairong Qi et al. describe a custom geometric correction method to restore the image from the misalignment distortion and present a binary tree-based generic demosaicking algorithm to efficiently estimate the missing special components
 and reconstruct a high-resolution full-spectral image. They used this new method for early detection of pressure ulcers, particularly so for dark pigmented skin to show how the geometric correction and demosaicking algorithms successfully reconstruct a full-spectral image from which apparent contrast enhancement between damaged skin and the normal skin is observed \cite{Qi}.\\
-\indent Jean-François Deprez proposed a 2D ultrasound elastography based on ultrasound imaging to address the challenging problem of pressure ulcer early detection. This was able to detect a subepidermal layer, helping to differentiate between pathological and healthy regions \cite{Deprez}. \\
+
+Jean-François Deprez proposed a 2D ultrasound elastography based on ultrasound imaging to address the challenging problem of pressure ulcer early detection. This was able to detect a subepidermal layer, helping to differentiate between pathological and healthy regions \cite{Deprez}. \\
