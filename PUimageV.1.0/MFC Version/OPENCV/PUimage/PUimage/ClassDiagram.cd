@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CAboutDlg" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PUimage.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CChildFrame" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAACAAAgAAAgAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChildFrm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CContrastDlg" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEEAAAAAAAAABAAAAAAAAQAAAIAAAAEAAAABAQ=</HashCode>
+      <FileName>ContrastDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CvvImage" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgYAABAACAAAAAAAAAEAQAABEDEAAAAQSAAAAAQA=</HashCode>
+      <FileName>Cvvimage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMainFrame" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAACAAAiAAAgCAAAgAAAAAAAAAAABA=</HashCode>
+      <FileName>MainFrm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPUimageApp" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAABAAAAAAQAAAABAAAAAAA=</HashCode>
+      <FileName>PUimage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPUimageDoc" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAISAAACAAAgAAgASggQAAAAAAAAQAAAAA=</HashCode>
+      <FileName>PUimageDoc.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPUimageView" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAIAACCABAgAAggCAAAAAAAAgIAAAAAwA=</HashCode>
+      <FileName>PUimageView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

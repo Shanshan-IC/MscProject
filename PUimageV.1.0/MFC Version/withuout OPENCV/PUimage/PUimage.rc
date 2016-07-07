@@ -1,0 +1,921 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PUimage.rc2""  // ???¡ì?¡ì? Microsoft Visual C++ ???¨¬?¡§¡§??¡§???¡ì?¡ì?-|??¨¬?????¨¬?¡§|??¡§?o???\r\n"
+    "#include ""afxres.rc""         // ???¨¬?¡§¡§??¡§?o???¨¬?¡§|????¨¬?¡§|??¡§?|?t\r\n"
+    "#include ""afxprint.rc""       // ????¡§?????¡§???/????¡§?????¡§???????¨¬??¨¬??¡§???¡ì?¡ì??¡§???¡ì?¡ì???¨¬?¡§|??¡§?o???\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PUimage.ico"
+IDR_PUimageTYPE         ICON                    "res\\PUimageDoc.ico"
+IDI_DIR                 ICON                    "res\\dir.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_MODE_BROWSE
+    BUTTON      ID_MODE_EDIT
+    SEPARATOR
+    BUTTON      ID_IMAGE_PREV
+    BUTTON      ID_IMAGE_NEXT
+    SEPARATOR
+    BUTTON      ID_MODE_NORMAL
+    BUTTON      ID_MODE_WIDTH
+    BUTTON      ID_MODE_HEIGHT
+    BUTTON      ID_MODE_SCREEN
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open",                        ID_FILE_OPEN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Capture",                     ID_FILE_CAPTURE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent",                      ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_APP_EXIT
+    END
+    POPUP "Mode"
+    BEGIN
+        MENUITEM "Browser Mode",                ID_MODE_BROWSE, CHECKED
+        MENUITEM "Editor Mode",                 ID_MODE_EDIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Toolbar",                     ID_VIEW_TOOLBAR
+        MENUITEM "StatusBar",                   ID_VIEW_STATUS_BAR
+        MENUITEM "Control Windows",             ID_VIEW_CONTROL
+        MENUITEM SEPARATOR
+        POPUP "Image"
+        BEGIN
+            MENUITEM "Page Up",                     ID_IMAGE_PREV
+            MENUITEM "Page Down",                   ID_IMAGE_NEXT
+            MENUITEM "The First",                   ID_IMAGE_FIRST
+            MENUITEM "The Last",                    ID_IMAGE_LAST
+        END
+    END
+    POPUP "Show Mode"
+    BEGIN
+        MENUITEM "Initial Size",                ID_MODE_NORMAL, CHECKED
+        MENUITEM "Zoom to Width",               ID_MODE_WIDTH
+        MENUITEM "Zoom to Height",              ID_MODE_HEIGHT
+        MENUITEM "Zoom to Screen",              ID_MODE_SCREEN
+    END
+    POPUP "Image"
+    BEGIN
+        MENUITEM "Image Info ",                 ID_IMAGE_IMAGEINFO
+        MENUITEM "Image Histogram",             ID_POINT_HISTOGRAM
+        MENUITEM "Image Resize",                ID_GEO_ZOOM
+        MENUITEM "Image Rotate",                ID_GEO_ROTATE
+        POPUP "Image Geometric"
+        BEGIN
+            MENUITEM "Flip",                        ID_GEO_MOVE
+            MENUITEM "Mirror",                      ID_GEO_MIRROR
+        END
+    END
+    POPUP "Process"
+    BEGIN
+        MENUITEM "Auto Adjustment",             ID_PROCESS_AUTOADJUSTMENT
+        MENUITEM "Brightness",                  ID_PROCESS_BRIGHTNESS
+        MENUITEM "Contrast",                    ID_PROCESS_CONTRAST
+        POPUP "Histogram"
+        BEGIN
+            MENUITEM "Equalization",                ID_HISTOGRAM_EQUALIZATION
+            MENUITEM "Contrast Limited Adaptive Equalizaiton(CLAHE)", ID_HISTOGRAM_CONTRASTLIMITEDADAPTIVEEQUALIZAITON
+        END
+        POPUP "Filter"
+        BEGIN
+            MENUITEM "Gaussian",                    ID_IMPROVE_SMOOTHG
+            MENUITEM "Median",                      ID_IMPROVE_MEDIAN
+            MENUITEM "Laplacian Sharpen",           ID_IMPROVE_SHARP
+        END
+        POPUP "Point Operation"
+        BEGIN
+            MENUITEM "Grey Linear Transformation",  ID_POINT_LINETRAN
+            POPUP "Grey Non-Linear Transformation"
+            BEGIN
+                MENUITEM "Logarithm",                   ID_POINT_LOG
+                MENUITEM "Power",                       ID_POINT_POWER
+                MENUITEM "Exponential",                 ID_POINT_EXP
+            END
+        END
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About PUimage",               ID_APP_ABOUT
+        MENUITEM "Helper",                      ID_HELP_HELPER
+    END
+    POPUP "Video"
+    BEGIN
+        MENUITEM "Eulerian",                    ID_VIDEO_EULERIAN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_PRIOR,       ID_IMAGE_PREV,          VIRTKEY, NOINVERT
+    VK_NEXT,        ID_IMAGE_NEXT,          VIRTKEY, NOINVERT
+    VK_HOME,        ID_IMAGE_FIRST,         VIRTKEY, NOINVERT
+    VK_END,         ID_IMAGE_LAST,          VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PREV DIALOGEX 0, 0, 210, 180
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "ËÎÌå", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Open",IDC_OPEN,82,159,45,16
+    SCROLLBAR       IDC_SCROLLBAR,11,124,187,14
+    LTEXT           "",IDC_PICNUM,128,139,71,17
+    CONTROL         "",IDC_PREV,"Static",SS_BLACKFRAME,7,6,194,113
+END
+
+IDD_HISTOGRAM DIALOGEX 0, 0, 233, 279
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gray Histogram"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,50,258,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,118,258,50,14
+    CONTROL         "",IDC_HISTOGRAM,"Static",SS_BLACKFRAME,7,7,219,189
+    EDITTEXT        IDC_LIMIT_LOWER,67,202,39,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_LIMIT_UP,151,202,39,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Lower",IDC_STATIC,33,204,27,10
+    LTEXT           "Upper",IDC_STATIC,126,204,19,10
+    LTEXT           "Gray Value:",IDC_STATIC,29,223,49,10
+    LTEXT           "0",IDC_STATIC_GRAY,77,223,19,10
+    LTEXT           "Ratio:",IDC_STATIC,123,223,37,10
+    LTEXT           "0",IDC_STATIC_PER,164,223,18,10
+    LTEXT           "%",IDC_STATIC_GRAY3,183,222,17,10
+END
+
+IDD_PREVIEW DIALOGEX 0, 0, 377, 348
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_VSCROLL | WS_HSCROLL | WS_SYSMENU
+CAPTION "Preview"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LINETRAN DIALOGEX 0, 0, 218, 252
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Linear Transformation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,83,231,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,144,231,50,14
+    EDITTEXT        IDC_SLOPE,56,210,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTERCEPT,152,210,34,12,ES_AUTOHSCROLL
+    LTEXT           "Please Enter the Function:",IDC_STATIC,7,7,112,9
+    LTEXT           "Slope:",IDC_STATIC,30,213,23,9
+    LTEXT           "Intercept:",IDC_STATIC,115,212,41,9
+    PUSHBUTTON      "Save",IDC_SAVE,22,231,50,14
+    CONTROL         "",IDC_PREV,"Static",SS_BLACKFRAME,7,17,204,189
+END
+
+IDD_LOGTRAN DIALOGEX 0, 0, 221, 265
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grey Logarithm Transformation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,244,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,244,50,14
+    PUSHBUTTON      "Save",IDC_SAVE,7,244,50,14
+    EDITTEXT        IDC_EDITA,185,204,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITB,185,222,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "A:",IDC_STATIC,16,206,16,8
+    CONTROL         "",IDC_SLIDERA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,30,205,154,12
+    LTEXT           "B:",IDC_STATIC,16,222,14,8
+    CONTROL         "",IDC_SLIDERB,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,29,222,154,12
+    CONTROL         "",IDC_PREV,"Static",SS_BLACKFRAME,7,7,204,189
+END
+
+IDD_POWERTRAN DIALOGEX 0, 0, 221, 284
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gray Exponential Transform"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,263,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,263,50,14
+    PUSHBUTTON      "Save",IDC_SAVE,7,263,50,14
+    EDITTEXT        IDC_EDITC,185,228,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITR,185,246,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "c:",IDC_STATIC,15,230,17,8
+    CONTROL         "",IDC_SLIDERC,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,30,229,154,12
+    LTEXT           "r:",IDC_STATIC,17,246,13,8
+    CONTROL         "",IDC_SLIDERR,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,29,246,154,12
+    CONTROL         "",IDC_PREV,"Static",SS_BLACKFRAME,7,7,204,189
+    EDITTEXT        IDC_EDITB,185,212,26,13,ES_AUTOHSCROLL
+    LTEXT           "b:",IDC_STATIC,16,214,16,8
+    CONTROL         "",IDC_SLIDERB,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,30,213,154,12
+END
+
+IDD_EXPTRAN DIALOGEX 0, 0, 221, 284
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gray Power Transformation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,263,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,263,50,14
+    PUSHBUTTON      "Save",IDC_SAVE,7,263,50,14
+    EDITTEXT        IDC_EDITB,185,228,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITC,185,246,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "b:",IDC_STATIC,15,230,17,8
+    CONTROL         "",IDC_SLIDERB,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,30,229,154,12
+    LTEXT           "c:",IDC_STATIC,16,245,8,8
+    CONTROL         "",IDC_SLIDERC,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,29,246,154,12
+    CONTROL         "",IDC_PREV,"Static",SS_BLACKFRAME,7,7,204,189
+    EDITTEXT        IDC_EDITA,185,212,26,13,ES_AUTOHSCROLL
+    LTEXT           "a:",IDC_STATIC,15,214,17,8
+    CONTROL         "",IDC_SLIDERA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,30,213,154,12
+END
+
+IDD_MIRROR DIALOGEX 0, 0, 195, 75
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mirror Transformation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,138,54,50,14
+    PUSHBUTTON      "Save",IDC_SAVE,7,54,50,14
+    GROUPBOX        "Type",IDC_STATIC,7,7,181,39
+    CONTROL         "Flip Mirror",IDC_MIRROR_H,"Button",BS_AUTORADIOBUTTON | WS_GROUP,34,21,50,14
+    CONTROL         "Vertical Mirror",IDC_MIRROR_V,"Button",BS_AUTORADIOBUTTON,109,21,60,14
+END
+
+IDD_ROTATE DIALOGEX 0, 0, 140, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rotation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,121,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,83,121,50,14
+    PUSHBUTTON      "Save",IDC_SAVE,83,100,50,14
+    PUSHBUTTON      "Preview",IDC_PREV,7,100,50,14
+    LTEXT           "Angel:",IDC_STATIC,14,16,44,14
+    EDITTEXT        IDC_ANGLE,51,15,74,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,38,126,14
+    COMBOBOX        IDC_MODE,7,76,119,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Mode:",IDC_STATIC,11,60,43,11
+END
+
+IDD_ZOOM DIALOGEX 0, 0, 157, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Image Resize"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,153,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,153,50,14
+    EDITTEXT        IDC_WIDTH,79,20,56,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT,79,41,56,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_MODE,19,103,119,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Keep the ratio of the width and height",IDC_PRO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,65,132,15
+    LTEXT           "Height:",IDC_STATIC,19,22,43,11
+    LTEXT           "Width:",IDC_STATIC,19,43,43,11
+    PUSHBUTTON      "Save",IDC_SAVE,89,128,50,14
+    LTEXT           "Mode:",IDC_STATIC,19,88,43,11
+    PUSHBUTTON      "Preview",IDC_PREV,17,128,50,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¹ØÓÚ PUimage"
+FONT 9, "Times New Roman", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PUimage V.1.0 ",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Imperial London College>"
+            VALUE "FileDescription", "TODO: <PUimage>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PUimage.exe"
+            VALUE "LegalCopyright", "TODO: (C) <Imperial London College>"
+            VALUE "OriginalFilename", "PUimage.exe"
+            VALUE "ProductName", "TODO: <PUimage>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PREV, DIALOG
+    BEGIN
+    END
+
+    IDD_HISTOGRAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_PREVIEW, DIALOG
+    BEGIN
+    END
+
+    IDD_LINETRAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_LOGTRAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_POWERTRAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_EXPTRAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_MIRROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_ROTATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_ZOOM, DIALOG
+    BEGIN
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ZOOM DLGINIT
+BEGIN
+    IDC_MODE, 0x403, 31, 0
+0x654e, 0x7261, 0x7365, 0x2074, 0x654e, 0x6769, 0x6268, 0x726f, 0x4920, 
+0x746e, 0x7265, 0x6f70, 0x616c, 0x6974, 0x6e6f, "\000" 
+    IDC_MODE, 0x403, 23, 0
+0x6942, 0x696c, 0x656e, 0x7261, 0x4920, 0x746e, 0x7265, 0x6f70, 0x616c, 
+0x6974, 0x6e6f, "\000" 
+    0
+END
+
+IDD_ROTATE DLGINIT
+BEGIN
+    IDC_MODE, 0x403, 31, 0
+0x654e, 0x7261, 0x7365, 0x2074, 0x654e, 0x6769, 0x6268, 0x726f, 0x4920, 
+0x746e, 0x7265, 0x6f70, 0x616c, 0x6974, 0x6e6f, "\000" 
+    IDC_MODE, 0x403, 33, 0
+0x6942, 0x696c, 0x656e, 0x7261, 0x4920, 0x746e, 0x7265, 0x6f70, 0x616c, 
+0x6974, 0x6e6f, 0x4120, 0x676c, 0x726f, 0x7469, 0x6d68, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_ROTATE AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_PREV AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_PREVIEW AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_HISTOGRAM AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_LINETRAN AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_EXPTRAN AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_LOGTRAN AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_MIRROR AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_POWERTRAN AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_ZOOM AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE ³õÊ¼»¯Ê§°Ü¡£ÇëÈ·±£ OLE ¿âÊÇÕýÈ·µÄ°æ±¾¡£"
+    IDC_MYTREECTRL          "TreeCtrl"
+    ID_INDICATOR_PICNUM     "Ã»ÓÐÍ¼Ïñ"
+    ID_INDICATOR_PICNAME    " "
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "PUimage\n\nPUimage\n\n\nPUimage.Document\nPUimage.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "PUimage"
+    AFX_IDS_IDLEMESSAGE     "¾ÍÐ÷"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "´´½¨ÐÂÎÄµµ\nÐÂ½¨"
+    ID_FILE_OPEN            "Open"
+    ID_FILE_CLOSE           "¹Ø±Õ»î¶¯ÎÄµµ\n¹Ø±Õ"
+    ID_FILE_SAVE            "Save"
+    ID_FILE_SAVE_AS         "ÓÃÐÂÃû³Æ±£´æ»î¶¯ÎÄµµ\nÁí´æÎª"
+    ID_FILE_PAGE_SETUP      "¸ü¸Ä´òÓ¡Ñ¡Ïî\nÒ³ÃæÉèÖÃ"
+    ID_FILE_PRINT_SETUP     "¸ü¸Ä´òÓ¡»úÑ¡ÏîºÍ´òÓ¡Ñ¡Ïî\n´òÓ¡ÉèÖÃ"
+    ID_FILE_PRINT           "´òÓ¡»î¶¯ÎÄµµ\n´òÓ¡"
+    ID_FILE_PRINT_PREVIEW   "ÏÔÊ¾ÕûÒ³\n´òÓ¡Ô¤ÀÀ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "About PUimage"
+    ID_APP_EXIT             "Exit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Recent"
+    ID_FILE_MRU_FILE2       "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE3       "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE4       "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE5       "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE6       "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE7       "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE8       "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE9       "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE10      "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE11      "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE12      "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE13      "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE14      "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE15      "´ò¿ª´ËÎÄµµ"
+    ID_FILE_MRU_FILE16      "´ò¿ª´ËÎÄµµ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "ÇÐ»»µ½ÏÂÒ»¸ö´°¸ñ\nÏÂÒ»´°¸ñ"
+    ID_PREV_PANE            "ÇÐ»»»ØÉÏÒ»¸ö´°¸ñ\nÉÏÒ»´°¸ñ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "½«»î¶¯´°¿Ú²ð·ÖÎª¶à¸ö´°¸ñ\n²ð·Ö"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Çå³ýÑ¡¶¨ÄÚÈÝ\nÇå³ý"
+    ID_EDIT_CLEAR_ALL       "Çå³ýÈ«²¿ÄÚÈÝ\nÈ«²¿Çå³ý"
+    ID_EDIT_COPY            "¸´ÖÆÑ¡¶¨ÄÚÈÝ²¢½«Æä·Åµ½¼ôÌù°åÉÏ\n¸´ÖÆ"
+    ID_EDIT_CUT             "¼ôÇÐÑ¡¶¨ÄÚÈÝ²¢½«Æä·Åµ½¼ôÌù°åÉÏ\n¼ôÇÐ"
+    ID_EDIT_FIND            "²éÕÒÖ¸¶¨µÄÎÄ±¾\n²éÕÒ"
+    ID_EDIT_PASTE           "²åÈë¼ôÌù°åÄÚÈÝ\nÕ³Ìù"
+    ID_EDIT_REPEAT          "ÖØ¸´ÉÏÒ»²Ù×÷\nÖØ¸´"
+    ID_EDIT_REPLACE         "ÓÃÆäËûÎÄ±¾Ìæ»»ÌØ¶¨µÄÎÄ±¾\nÌæ»»"
+    ID_EDIT_SELECT_ALL      "Ñ¡¶¨Õû¸öÎÄµµ\nÈ«Ñ¡"
+    ID_EDIT_UNDO            "³·ÏûÉÏÒ»²Ù×÷\n³·Ïû"
+    ID_EDIT_REDO            "»Ö¸´ÉÏ´Î³·ÏûµÄ²Ù×÷\nÖØ×ö"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Toolbar"
+    ID_VIEW_STATUS_BAR      "StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "¸ü¸Ä´°¿Ú´óÐ¡"
+    AFX_IDS_SCMOVE          "¸ü¸Ä´°¿ÚÎ»ÖÃ"
+    AFX_IDS_SCMINIMIZE      "½«´°¿ÚËõÐ¡ÎªÍ¼±ê"
+    AFX_IDS_SCMAXIMIZE      "Ê¹´°¿Ú×î´ó»¯ÏÔÊ¾"
+    AFX_IDS_SCNEXTWINDOW    "ÇÐ»»µ½ÏÂÒ»¸öÎÄµµ´°¿Ú"
+    AFX_IDS_SCPREVWINDOW    "ÇÐ»»µ½Ç°Ò»¸öÎÄµµ´°¿Ú"
+    AFX_IDS_SCCLOSE         "¹Ø±Õ»î¶¯´°¿Ú²¢ÌáÊ¾±£´æÎÄµµ"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "½«´°¿Ú»Ö¸´µ½Õý³£´óÐ¡"
+    AFX_IDS_SCTASKLIST      "¼¤»îÈÎÎñÁÐ±í"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "¹Ø±Õ´òÓ¡Ô¤ÀÀÄ£Ê½\nÈ¡ÏûÔ¤ÀÀ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MODE_NORMAL          "Initial Size"
+    ID_MODE_WIDTH           "Zoom to Width"
+    ID_MODE_HEIGHT          "Zoom to Height"
+    ID_MODE_SCREEN          "Zoom to Screen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_IMAGE_NEXT           "Page Down"
+    ID_IMAGE_PREV           "Page Up"
+    ID_IMAGE_FIRST          "The First"
+    ID_IMAGE_LAST           "The End"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EFFECT_NONE          "²»ÏÔÊ¾ÌØÐ§"
+    ID_EFFECT_RAND          "ÒÔËæ»ú·½Ê½ÏÔÊ¾ÌØÐ§"
+    ID_EFFECT_SCANDOWN      "ÏòÏÂÉ¨Ãè"
+    ID_EFFECT_VSCAN         "´¹Ö±Ë«ÖØÉ¨Ãè"
+    ID_EFFECT_MOVERIGHT     "ÏòÓÒÒÆ¶¯"
+    ID_EFFECT_VBLIND        "´¹Ö±°ÙÒ¶´°"
+    ID_EFFECT_MOSAIC        "ÂíÈü¿Ë"
+    ID_EFFECT_HSMOVE        "Ë®Æ½Ë«ÖØÒÆ¶¯"
+    ID_EFFECT_SBLIND        "Ë®Æ½°ÙÒ¶´°"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EFFECT_HRASTER       "Ë®Æ½Õ¤Ìõ"
+    ID_EFFECT_VRASTER       "´¹Ö±Õ¤Ìõ"
+    ID_EFFECT_RAINDROP      "ÓêµÎ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MODE_BROWSE          "Browser Mode "
+    ID_MODE_EDIT            "Editor Mode"
+END
+
+STRINGTABLE
+BEGIN
+    ID_32902                "ID_IMPROVE_MEDIAN"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG3 DIALOGEX 0, 0, 273, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Brightness"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,56,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,62,50,14
+    EDITTEXT        IDC_EDIT1,221,31,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,46,30,168,15
+    LTEXT           "Level",IDC_STATIC,21,34,18,8
+END
+
+IDD_CONTRAST DIALOGEX 0, 0, 247, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Contrast"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,51,46,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,149,46,50,14
+    EDITTEXT        IDC_EDIT1,197,20,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,51,20,140,15
+    LTEXT           "Beta",IDC_STATIC,23,22,16,8
+END
+
+IDD_EULERIAN DIALOGEX 0, 0, 317, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eulerian Color Magnification"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,169,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,260,169,50,14
+    LTEXT           "Amplification",IDC_STATIC,18,24,41,8
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,97,17,145,15
+    LTEXT           "Cut-off Wavelength",IDC_STATIC,18,51,65,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,97,46,145,15
+    LTEXT           "Low Cut-off",IDC_STATIC,18,80,39,8
+    LTEXT           "High Cut-off",IDC_STATIC,18,108,40,8
+    LTEXT           "ChromAttenuation",IDC_STATIC,18,132,60,8
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,97,74,145,15
+    CONTROL         "",IDC_SLIDER4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,97,105,146,15
+    CONTROL         "",IDC_SLIDER5,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,97,132,145,15
+    EDITTEXT        IDC_EDIT1,250,18,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,250,47,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,250,76,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,250,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,250,134,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Load Video",IDC_BUTTON1,51,169,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_CONTRAST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_EULERIAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG3 AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\PUimage.rc2"  // ??¨¨? Microsoft Visual C++ ??§?è??ì?¨¨?-|?§????§?é??ìo???
+#include "afxres.rc"         // ??§?è??ìo??§?é???§?é??ì|?t
+#include "afxprint.rc"       // ????ì????ì??/????ì????ì?????§?§??ì?¨¨??ì?¨¨??§?é??ìo???
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

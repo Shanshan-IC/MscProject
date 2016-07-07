@@ -93,10 +93,6 @@ D:\New folder (3)\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsAppli
 \\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\WindowsApplication1.exe
 \\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
 \\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\WindowsApplication1.xml
-\\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\Emgu.CV.DebuggerVisualizers.VS2015.dll
-\\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\Emgu.CV.UI.dll
-\\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\Emgu.CV.UI.GL.dll
-\\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\Emgu.CV.World.dll
 \\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
 \\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\ZedGraph.dll
 \\icnas1.cc.ic.ac.uk\sf2715\Desktop\GitHub\MscProject\PUimageV.1.0\VB version\WindowsApplication1\bin\Debug\Emgu.CV.UI.xml
