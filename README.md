@@ -1,5 +1,5 @@
 # MscProject - Ongoing
-
+Update: Version 1.2 is the lastest one.
 
 Title: An Image Analysis Approach to the Early Detection of Pressure Ulcers
 
