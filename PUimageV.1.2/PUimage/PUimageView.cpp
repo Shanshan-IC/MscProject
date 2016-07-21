@@ -26,6 +26,7 @@
 #include "SkinColor.h"
 #include "Motion.h"
 #include "AddFunct.h"
+#include "VideoPlay.h"
 
 #include "opencv2/opencv.hpp"
 #include "VideoProcessor.h"
@@ -72,6 +73,9 @@ BEGIN_MESSAGE_MAP(CPUimageView, CView)
 	ON_COMMAND(ID_IMAGE_ZOOMOUT, &CPUimageView::OnImageZoomout)
 	ON_COMMAND(ID_FILTER_BILATERAL, &CPUimageView::OnFilterBilateral)
 	ON_COMMAND(ID_FILTER_NORMALIZEDBLOCK, &CPUimageView::OnFilterNormalizedblock)
+	ON_COMMAND(ID_VIDEO_IMAGE2VIDEO, &CPUimageView::OnVideoImage2video)
+	ON_COMMAND(ID_VIDEO_TEST, &CPUimageView::OnVideoTest)
+	ON_COMMAND(ID_VIDEO_EULERIANVIDEOMAGNIFICATION, &CPUimageView::OnVideoEulerianvideomagnification)
 END_MESSAGE_MAP()
 
 // CPUimageView construction/destruction
@@ -440,7 +444,7 @@ void CPUimageView::OnDetectCricledetect()
 	vector<Vec3f> circles;
 
 	/// Apply the Hough Transform to find the circles
-	HoughCircles(src_gray, circles, CV_HOUGH_GRADIENT, 1, src_gray.rows / 8, 200, 100, 0, 0);
+	HoughCircles(src_gray, circles, CV_HOUGH_GRADIENT, 1, src_gray.rows / 15, 200, 100, 0, 0);
 
 	/// Draw the circles detected
 	for (size_t i = 0; i < circles.size(); i++)
@@ -790,4 +794,35 @@ void CPUimageView::OnFilterNormalizedblock()
 	dlg.m_image = cimg;
 	dlg.DoModal();
 	waitKey(0);
+}
+
+
+void CPUimageView::OnVideoImage2video()
+{
+	Size frameSize(1360, 1024);
+	VideoCapture sequence("fr%d.jpg");
+	Mat img;
+	VideoWriter out_capture("video.avi", CV_FOURCC('M', 'J', 'P', 'G'), 30, Size(20, 20));
+	while (true)
+	{
+		sequence >> img;
+		if (img.empty())
+			break;
+
+		out_capture.write(img);
+	}
+}
+
+
+void CPUimageView::OnVideoTest()
+{
+	CVideoPlay dlg;
+	dlg.DoModal();
+}
+
+
+void CPUimageView::OnVideoEulerianvideomagnification()
+{
+	CVideoPlay dlg;
+	dlg.DoModal();
 }

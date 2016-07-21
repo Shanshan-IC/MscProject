@@ -55,8 +55,8 @@ BEGIN
     BUTTON      ID_EDIT_COPY
     BUTTON      ID_EDIT_PASTE
     SEPARATOR
-    BUTTON      ID_FILE_PRINT
     BUTTON      ID_APP_ABOUT
+    BUTTON      ID_FILE_PRINT
 END
 
 
@@ -124,15 +124,14 @@ BEGIN
             MENUITEM "Cricle Detect",               ID_DETECT_CRICLEDETECT
             MENUITEM "Skin Detect",                 ID_PROCESS_SKINDETECT
             MENUITEM "Canny Edge Detect",           ID_DETECT_CANNYEDGEDETECT
-            MENUITEM "Corner Detect",               ID_DETECT_CORNERDETECT
             MENUITEM "Cascade Classifier",          ID_DETECT_CASCADECLASSIFIER
         END
     END
     POPUP "Video"
     BEGIN
-        MENUITEM "Eulerian",                    ID_VIDEO_EULERIAN
+        MENUITEM "Image2Video",                 ID_VIDEO_IMAGE2VIDEO
         MENUITEM "Motion",                      ID_VIDEO_MOTION
-        MENUITEM "Auto",                        ID_VIDEO_AUTO
+        MENUITEM "Eulerian Color Magnification", ID_VIDEO_EULERIANVIDEOMAGNIFICATION
     END
     POPUP "&Window"
     BEGIN
@@ -453,7 +452,7 @@ BEGIN
     PUSHBUTTON      "Preview",IDC_BUTTON1,49,53,50,14
 END
 
-IDD_EULERIAN DIALOGEX 0, 0, 331, 202
+IDD_EULERIAN DIALOGEX 0, 0, 475, 335
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION " "
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
@@ -512,6 +511,44 @@ BEGIN
     PUSHBUTTON      "Save",IDC_BUTTON2,66,248,50,14
 END
 
+IDD_DIALOG3 DIALOGEX 0, 0, 597, 449
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Exit",IDCANCEL,512,420,50,14
+    CONTROL         "",IDC_ShowImg,"Static",SS_BLACKFRAME,19,15,243,184
+    GROUPBOX        "Video",IDC_STATIC,36,232,156,51
+    PUSHBUTTON      "Load Video",IDC_ReadVideo_Button,78,241,50,14
+    PUSHBUTTON      "Play",IDC_Play_Button,50,262,39,14
+    PUSHBUTTON      "Stop",IDC_Stop_Button,120,263,43,14
+    CONTROL         "",IDC_EULERIAN,"Static",SS_BLACKFRAME,291,14,243,185
+    LTEXT           "Original Video",IDC_STATIC,89,209,44,8
+    LTEXT           "After Eulerian Color Manification",IDC_STATIC,361,209,104,8
+    GROUPBOX        "Eulerian Color Manification",IDC_STATIC,266,225,312,192
+    LTEXT           "Amplification",IDC_STATIC,288,250,41,8
+    LTEXT           "Cut-off Wavelength",IDC_STATIC,288,277,65,8
+    LTEXT           "Low Cut-off",IDC_STATIC,288,309,39,8
+    LTEXT           "High Cut-off",IDC_STATIC,288,338,40,8
+    LTEXT           "ChromAttenuation",IDC_STATIC,288,369,60,8
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,374,246,130,15
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,374,274,131,15
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,374,303,130,15
+    CONTROL         "",IDC_SLIDER4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,374,334,131,15
+    CONTROL         "",IDC_SLIDER5,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,374,364,132,15
+    EDITTEXT        IDC_EDIT1,516,247,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,517,274,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,516,303,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,516,333,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,516,365,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Image",IDC_STATIC,35,297,152,95
+    PUSHBUTTON      "Load Image",IDC_BUTTON1,59,311,50,14
+    PUSHBUTTON      "Canny",IDC_BUTTON2,59,342,50,14
+    PUSHBUTTON      "Multiple Images to Video",IDC_BUTTON3,61,369,100,14
+    PUSHBUTTON      "Auto Magnification",IDC_BUTTON4,318,394,80,14
+    PUSHBUTTON      "Magnification",IDC_BUTTON6,453,394,50,14
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -540,9 +577,9 @@ BEGIN
     IDD_EULERIAN, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 324
+        RIGHTMARGIN, 468
         TOPMARGIN, 7
-        BOTTOMMARGIN, 195
+        BOTTOMMARGIN, 328
     END
 
     IDD_DIALOG2, DIALOG
@@ -565,6 +602,14 @@ BEGIN
     BEGIN
         LEFTMARGIN, 7
         BOTTOMMARGIN, 272
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 590
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 442
     END
 END
 #endif    // APSTUDIO_INVOKED

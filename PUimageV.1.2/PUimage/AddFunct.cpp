@@ -14,3 +14,9 @@ Mat rotate(Mat src, double angle)
 	warpAffine(src, dst, r, Size(src.cols, src.rows));
 	return dst;
 }
+
+
+void on_track_bar_slide(CvCapture* capture, int pos)
+{
+	cvSetCaptureProperty(capture, CV_CAP_PROP_POS_FRAMES, pos);
+}

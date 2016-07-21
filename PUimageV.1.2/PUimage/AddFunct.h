@@ -7,3 +7,4 @@ using namespace cv;
 using namespace std;
 
 Mat rotate(Mat src, double angle);
+void on_track_bar_slide(CvCapture* capture, int pos);

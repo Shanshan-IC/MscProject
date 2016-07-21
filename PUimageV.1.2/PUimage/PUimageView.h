@@ -70,6 +70,9 @@ public:
 	afx_msg void OnImageZoomout();
 	afx_msg void OnFilterBilateral();
 	afx_msg void OnFilterNormalizedblock();
+	afx_msg void OnVideoImage2video();
+	afx_msg void OnVideoTest();
+	afx_msg void OnVideoEulerianvideomagnification();
 };
 
 #ifndef _DEBUG  // debug version in PUimageView.cpp

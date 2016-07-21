@@ -75,6 +75,9 @@
     <ClInclude Include="ResizeDlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="VideoPlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PUimage.cpp">
@@ -126,6 +129,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ResizeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoPlay.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
