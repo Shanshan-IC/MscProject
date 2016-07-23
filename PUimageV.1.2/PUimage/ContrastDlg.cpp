@@ -52,6 +52,7 @@ END_MESSAGE_MAP()
 BOOL CContrastDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
+	//set the range of slider from 1.0 to 3.0, and default value is 1.0
 	m_Slider.SetRangeMin(1.0, false);
 	m_Slider.SetRangeMax(3.0, false);
 	m_SliderValue = "1.0";
@@ -62,6 +63,7 @@ BOOL CContrastDlg::OnInitDialog()
 	// EXCEPTION: OCX Property Pages should return FALSE
 }
 
+//edit value is set to the slider value
 void CContrastDlg::OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar)
 {
 	if (nSBCode == SB_THUMBPOSITION)
@@ -79,6 +81,7 @@ void CContrastDlg::OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar)
 	CDialogEx::OnHScroll(nSBCode, nPos, pScrollBar);
 }
 
+//according to the value set by the user, call the brightness and contrast function
 void CContrastDlg::OnBnClickedButton1()
 {
 	double beta = atof(m_SliderValue);

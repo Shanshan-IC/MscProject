@@ -166,20 +166,19 @@ void CPUimageView::OnHistogramEqulization()
 
 	Mat img = pDoc->matImg;
 	Mat dst;
-
 	vector<Mat> channels;
 	Mat img_hist_equalized;
 
-	cvtColor(img, img_hist_equalized, CV_BGR2YCrCb); //change the color image from BGR to YCrCb format
-
-	split(img_hist_equalized, channels); //split the image into channels
-
-	equalizeHist(channels[0], channels[0]); //equalize histogram on the 1st channel (Y)
-
-	merge(channels, img_hist_equalized); //merge 3 channels including the modified 1st channel into one image
-
-	cvtColor(img_hist_equalized, img_hist_equalized, CV_YCrCb2BGR); //change the color image from YCrCb to BGR format (to display image properly)
-
+	//change the color image from BGR to YCrCb format
+	cvtColor(img, img_hist_equalized, CV_BGR2YCrCb); 
+	///split the image into channels
+	split(img_hist_equalized, channels); 
+	//equalize histogram on the 1st channel (Y)
+	equalizeHist(channels[0], channels[0]); 
+	//merge 3 channels including the modified 1st channel into one image
+	merge(channels, img_hist_equalized); 
+	//change the color image from YCrCb to BGR format (to display image properly)
+	cvtColor(img_hist_equalized, img_hist_equalized, CV_YCrCb2BGR); 
 
 	IplImage temp = img_hist_equalized;
 	CvvImage cimg;
@@ -203,9 +202,7 @@ void CPUimageView::OnProcessContrast()
 	CContrastDlg dlg;
 	Mat src = pDoc->matImg;
 	dlg.m_mat = src;
-	dlg.DoModal();
-
-	
+	dlg.DoModal();	
 }
 
 
@@ -216,6 +213,7 @@ void CPUimageView::OnProcessAuto()
 	if (!pDoc)
 		return;
 
+	//auto set brightness is 2 and contrast value is 20
 	Mat mats = pDoc->matImg;
 	Mat new_mats = autoBrightContrast(mats, 2, 20);
 	IplImage img = new_mats;

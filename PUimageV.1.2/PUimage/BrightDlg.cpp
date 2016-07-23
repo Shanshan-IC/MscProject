@@ -53,7 +53,7 @@ END_MESSAGE_MAP()
 BOOL CBrightDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
-
+	//set the range of slider from 0 to 100, and default value is 0
 	m_Slider.SetRangeMin(0, false);
 	m_Slider.SetRangeMax(100, false);
 	m_SliderValue = "0";
@@ -63,7 +63,7 @@ BOOL CBrightDlg::OnInitDialog()
 	// EXCEPTION: OCX Property Pages should return FALSE
 }
 
-
+//edit value is set to the slider value
 void CBrightDlg::OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar)
 {
 	if (nSBCode == SB_THUMBPOSITION)
