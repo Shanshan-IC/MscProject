@@ -1,0 +1,75 @@
+\chapter{Background}
+\section{Pressure Ulcers}
+A pressure ulcer (PU) is lesion caused by unrelieved pressure resulting in damage of underlying tissue \cite{Wikipedia}. Pressure ulcers are areas of localized injuries caused by compression of soft tissue between a bony prominence and an external surface for a prolonged period of time \cite{Treatment}. Unrelieved pressure and shear are the most important contributing factors in the pathogenesis.\\
+
+In UK, nearly 700,000 people are affected by pressure ulcers each year, across all care settings, including patients in their own homes, most of them with the most vulnerable of patients aged over 75. Around 186,617 patients develop a pressure ulcer in hospital each year \cite{NHS}. Given the aging of the population, PU are likely to become a problem of increasing proportion in the near future \cite{Maklebust}.\\
+
+Pressure Ulcers are associated with significant economic burden, and costs continue to rise \cite{Allman}. The cost of treating a pressure ulcer varies from \pounds 1,064 to \pounds 10,551. Costs increase with ulcer grade due to the longer time to heal and the higher incidence of complications in more severe cases. The total cost ranges in the UK from \pounds 1.4 billon to \pounds 2.1 billion annually (4\% of total NHS expenditure) \cite{Bennett}. In the US, it costs \textdollar 9.1 -\textdollar 11.6 billion per year with 2.5 million patients. The cost of individual patient care ranges from \textdollar 20,900 to \textdollar 151,700 per pressure ulcer \cite{HumanService}. Pressure ulcers are not only significantly costly, but also are associated with increased mortality.\\
+
+Therefore, those consequences highlight the value of the early detection of pressure ulcers. If pressure ulcers are detected in the early stage, simple care of the tissue can allow the skin to remain intact and heal without scarring or the need for surgical intervention. \\
+
+According to the staging description of PU revised by International NPUAP- EPUAP Pressure Ulcer \cite{epuap}, stage I PU presents as Intact skin with non-blanchable erythema of a localized area usually over a bony prominence. It may present pain, redness, hardness or discoloration of the skin. Darkly pigmented skin may not have visible blanching. And Stage I may be difficult to detect in individuals with dark skin tones due to increased melanin content. 
+
+\section{Related Research}
+Main issues regarding proper analysis of skin disease includes image acquisition, image processing, the feature extraction, and some classification methodology \cite{Patel}. The major advantage of using computer is that patients do not have to suffer painful diagnosing process. Moreover, it speeds up the procedure of diagnosis of the disease and improve the diagnostic accuracy according to the processed images of skin. There are several previous studies to show how to use computing  techniques to improve the early detection of pressure ulcers.\\
+
+\subsection{Image Processing used in skin diseases diagnosis studies}
+Image processing and computational techniques have been applied in different aspects of wound diagnosis. Some approaches involves detecting the different tissues existing in the wound area, by using diverse segmentation methods, such as histogram thresholding, watersheds, classification, mean-shift smoothing or graphs, and also some introduces the machine learning strategies. \\
+
+Dimitrios I. Kosmopoulos investigated how a tool for automated pressure ulcer stage classification can be integrated into an asynchronous telemedicine system, which aims to monitoring capabilities and  increase efficiency for large volumes of patient
+data. Moreover, the initial processing results are provided to
+explore the feasibility of automated classification of pressure ulcer areas in different grades \cite{Kosmopoulos}.\\
+
+Jon Leachtenauer research group used a non-contact imaging-based method to detect Stage I pressure ulcers with a wide range of melanin levels. There are two approaches were explored: the one is to used narrow and board band visible spectrum imaging, and the other one is to used near infrared imaging. The results are presented together with results of numerical analysis of different erythema indices derived from the visible spectrum images \cite{Leachtenauer}. \\
+
+The Hospital of University of Sao Paulo nvestigated the pressure ulcers incidence of 39.8\% \cite{Rogenski}, and the evolution of healing process is followed by measuring PU using simple measures, tracing, image analysis or photographs by the computational system, which is achieved by softwares Motic and AutoCAD \cite{minister}.\\
+
+R.Guadagnin, R. de S. Neves et al initially captured images by digital camera. Each image was separated in the images that correspond to blue, green and red bands. They then performed convolution on each image with a 9x9 mean mask with Idrisi Software to remove distortion due to texture peculiarities as it may happen because of texture peculiarities isolated points distort parts of the images, which belong to healthy skin, or pressure core or pressure border \cite{Santana}. \\
+
+Erythema can be detected with relatively simple and low-cost imaging and image enhancement techniques at pressure ulcers stage I, which was suggested by Prabhu Jude Rajendran. They used CLAHE algorithm and the preliminary results clearly indicate that the enhanced images with higher contrast to make the pressure ulcer site more conspicuous to the examiner \cite{Rajendran}.\\
+
+Hairong Qi et al. describe a custom geometric correction method to restore the image from the misalignment distortion and present a binary tree-based generic demosaicking algorithm to efficiently evaluate the missing special components
+and reconstruct a full-spectral and high-resolution image. They used this method for the early detection of pressure ulcers, particularly  for dark pigmented skin, to show how the geometric correction and demosaicking algorithms successfully reconstruct a full-spectral image from which apparent contrast enhancement between damaged skin and the normal skin is observed \cite{Qi}.\\
+
+Jean-François Deprez proposed a 2D ultrasound elastography based on ultrasound imaging to solve the challenging problem of pressure ulcer early detection. This was able to detect a subepidermal layer and differences between pathological and healthy regions \cite{Deprez}. \\
+
+\subsection{Image Processing used in wound-area identification studies}
+Some aspects involve wound-area identification, which has been tackled with different techniques such as contour detection with histogram segmentation, region growing, clustering approaches or skin texture models \cite{Veredas}.\\
+
+Tim D. Jones and Peter Plassmann used an active contour model is presented that models the contour using piecewise B-spline arcs and uses the minimax principle
+to regularize the contour based on the local conditions in the wound image. The model used the existing manual delineation process to initialize the solution and to reduce the effect of the inherent variations on the repeatability and consistency of area measurements in many cases.\cite{Jones}\\
+
+Francisco Veredas proposed a hybrid approach based on neural networks and Bayesian
+classifiers, which are used to design a computational system for the automatic tissue identification in wound images. And specific heuristics are designed to significantly improve the results of the classification. This method obtains a higher efficiency rate from a binary cascade approach for tissue identification. Results are compared with other similar machine learning approaches, including support vector machines and multiclass Bayesian committee machine classifiers  \cite{Veredas2}. \\
+
+Hazem Wannous and Sylvie Treuillet introduced the key steps including merging of expert labeling, color correction, and segmentation driven classification according to support vector machines. The tool thus is to developed to ensure stability under lighting condition, camera changes and viewpoint, to achieve robust classification of skin tissues. Clinical tests demonstrate that such an advanced tool that forms part of a color wound assessment and complete 3-D system, significantly improves the monitoring process
+of the healing process \cite{Wannous}.\\
+
+\subsection{Eulerian Video Magnification application studies}
+\subsubsection{Lagrangian to Eulerian Background}
+
+The researchers at MIT started working with motion magnification in 2005 \cite{Motion}. In order to do this, they measured visual motions and combined pixels together to be modified from the sequence of images from a video. The Lagrangian method analyzes the motions of input video sequence, allowing a user to specify a cluster of pixels to be affected, and how much their motions are to be magnified. The final step is s to render the sequence with the desired motions magnified by the specified amount.\\
+
+In 2012, this group introduced a new way for revealing subtle changes, which is called Eulerian Video Magnification technique. The basic approach is to consider the time series of color values at any given pixel and amplify variation in a given temporal frequency band of interest. In this way, Hao-Yu Wu and Michael Rubinstein visualized the flow of bloods as they fill the face and reveal small motions \cite{Rubinstein}.\\
+
+\subsubsection{Eulerian Video Magnification Applications}
+Xiaochuan He and Rafik A. Goubran used Eulerian Video Magnification to measure the pulse transit time,  compared with the time differences detected using a conventional technique based on two PulseSensors and the Arduino board.  proving this approach has the potential to be used for health-care monitoring\cite{Goubran}. By doing so, the pulse transit time can be calculated from the video recorded by the web camera, without any former
+knowledge of the ECG and PPG signals.\\
+
+Guha Balakrishnan and Fredo Durand extracted heart rate and beat lengths from the videos by measuring subtle head motion, which is caused by the Newtonian reaction to the influx of blood at each beat. The method is to track features on the head and performs principal component analysis to decompose their trajectories into a set of component motions. Then choose the component that best corresponds to heartbeats based on the temporal frequency spectrum. The results reported heart rates nearly identical
+to an electrocardiogram device. What's more, it was able to capture clinically relevant information about heart
+rate variability \cite{Balakrishnan}.\\
+
+Jorge Alves da Silva developed the android application implemented features, such as, detection of a person’s cardiac pulse, dealing with artifacts’ motion, and real-time display of the magnified blood flow\cite{android}.\\
+
+Nicklas Overgaard and  Ctirad Sousedik examined the applicability of Eulerian Video Magnification method to emphasize color variations related to the heartbeat of the genuine living fingers as a means of distinguishing between  artefact and genuine fingers \cite{Overgaard}.\\
+
+Yuan Fang Liu explored the potential of Eulerian Video Magnification to serve as a powerful free flap monitoring  with the benefit of being noninvasive, sensitive, easy-to-use, and nearly cost-free \cite{walker}.
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+\documentclass[pdflatex,a4paper,11pt,twoside]{report}
+\usepackage[left=2.5cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\usepackage{textcomp} 
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{blindtext}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{makecell}
+
+\newcommand\mgape[1]{\gape{$\vcenter{\hbox{#1}}$}}
+
+\input{title}
+
+\begin{document}
+  \maketitle
+  \setcounter{tocdepth}{1}
+  \tableofcontents
+  \input{abstract}
+  \input{Acknowledgements}
+  \listoffigures
+   \listoftables
+  \input{intro}
+  \input{background}
+  \input{specification}
+  \input{productDesign}
+  \input{image}
+  \input{project}
+  \input{Methodology}
+  \input{plan}
+  \input{future}
+  \bibliography{mendeley} 
+  \bibliographystyle{plain}
+  \input{methodology}
+\end{document}

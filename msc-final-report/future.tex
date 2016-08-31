@@ -1,0 +1,29 @@
+\chapter{Conclusion and Future Work}
+This final chapter presents the review of the relevant information obtained from this project and an exposition of further work and research.\\
+
+\section{Conclusion} 
+This is a great step in developing an innovative non-invasive erythema detection software. These results have confirmed that image processing can be implemented to improve image contrast and subsequently aid in the detection of erythema, which applies to all skin colors.\\
+
+A standard video is taken as input and magnified to amplify the small color changes that was invisible to human eye. Furthermore, work improvements in Eulerian color amplification by using Gaussian and Steerable pyramids for video decomposition
+were investigated. To observe small changes in a video and to extract subtle changes, Gaussian pyramids were used. The effects on different videos with different formats and noise environments when subjected to this system were observed. Those samples suggest immense potential on detecting the early stage of pressure ulcers.\\
+
+\section{Limitations}
+There still remains much future work be done, some of which has been highlighted in this part. The following are some key additions that could enhance the future performance of
+the current work:
+\begin{itemize}
+\item For different individuals, environments, Eulerian video magnification parameters influence the result video heavily, which means the algorithm is sensitive. It is better to training much more video data to modify the algorithm.
+\item Eulerian Video Magnification is trying to amplify color changes regardless of their source. When using the high amounts of magnification, it will lead to magnifying noise and compression artifacts making stray colors appear where we did not intend them to.
+\item The number of samples are not much enough for training the algorithms. It is necessary to collect different individuals sample data.
+\item A database is the application that manages data and allows fast storage and retrieval of that data. The motivation expressed at the beginning of this report outlined the ideal non-invasive image-based and video-based erythema detection of early stage of pressure ulcers to assist medical professionals. The focus of this project has been on the image analysis and video magnification, however from the reality fact to monitor the patients' situation from time to time, it is necessary to build the complete patients and medical staff database. Also, related information is stored together for fast query access C++.
+\item Exploring the possibility of support on mobile devices
+\end{itemize}
+
+\section{Futher Works}
+Initially, the current limitations would be addressed as summarized below:
+\begin{itemize}
+\item Update the eulerian color magnification parameters, and focus on exploring to combine this method with other analysis algorithm to training different individuals videos. Also, implement more futures on this desktop software.
+\item Modify the proposed method to reduce the processing time as well as noise and attempt to make this process fully automatic.
+\item  For visual C++ applications running on Windows, the preferred way to connect to SQL databases, including SQL Database instances hosted in Azure, is to use the ODBC Driver 11 for SQL Server on Windows. From the Microsoft page \cite{microsoft2}, The Microsoft ODBC Driver 13.1 for SQL Server are stand-alone drivers that provide an application programming interface (API) that implements the standard ODBC interfaces to Microsoft SQL Server.
+\item Explore the feasibility of developing the mobile app. In OpneCV, there binding for iOS, even Android. However, there exits a little problem: developing real-time Eulerian Video Magnificationbased method capable of executing on a mobile device, which will require performance optimizations and trade-offs will have to taken into account\cite{android}.
+\end{itemize}
+

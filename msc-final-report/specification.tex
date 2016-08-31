@@ -1,0 +1,61 @@
+\chapter{Specification} \label{chapter:model}
+The specification consisted of high-level essential requirements. This section discusses their completion status. Detailed table expatiating specifications are given in table 3.1 by applying the simplified version of van Lamsweerde\textquotesingle s KAOS goal-oriented model \cite{kaos}, questioning how and why a particular requirement is applied. 
+\begin{table}[H]
+\small
+\captionof{table}{Specifications Table} \label{tab:title2} 
+\begin{tabular}{ | m{3.7cm}| m{8cm} | c | c|} 
+\hline
+Component & Description & Priority & Status\\ 
+\hline
+Windows Applicaitons Function & File: Open Dialog, Save Dialog, Recent Files and Exit dialog & H & Complete \\
+\hline
+Windows Image Editor & Editor: Undo, Redo, Copy, Paster, Reset ( Reset the image to the original One) & H & Complete \\
+\hline
+Windows Image Viewer & Initial Size, Zoom In, Zoom Out, Resize and Rotate & M & Complete \\
+\hline
+Image Processing Tools & Implement multiply image processing algorithms, including brightness and contrast adjustment,  Histogram (RGB Histogram, Histogram Equalization, Contrast Limited Adaptive Equalizaiton(CLAHE)), Sobel, Filter(Normalized Block, Gaussian Filter, Median Filter, Bilateral Filter) & H & Complete \\
+\hline
+Pressure Ulcers Area Detection & Automatically detect the disease area & H & Complete \\
+\hline
+Eulerian Color Magnification & Real-time video magnification to detect the color differences of skins & H & Complete \\
+\hline
+Image Difference Evaluation Diagram & Create a patients treatment changes based on the timeline & L & OnProcess \\
+\hline
+Software Support & Extension of the software to support multiple computer system and exploring the possibility of support on mobile devices & L & OnProcess \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{I/O Issues}
+Category: medium risk, high priority. Status: complete.
+\begin{itemize}
+\item{Original Steps:}\\
+- Implement a reliable system for streaming images from the computer. – complete.\\
+- Implement the video loading for eulerian video magnification. - complete.
+\end{itemize}
+
+\section{Image Process}
+Category: high risk, high priority. Status: complete(extended).
+\begin{itemize}
+\item{Original Steps:}\\
+- Brightness and Contrast adjustment – complete.\\
+- Histogram Analysis (RGB  Histogram,  Histogram Equalization,   Contrast   Limited   Adaptive   Equalizaiton (CLAHE)). - complete - complete.
+\item{Extensions:}\\
+- Add Filter algorithms (Normalized  Block,Gaussian Filter, Median Filter, Bilateral Filter) - complete. \\
+\end{itemize}
+When an image is acquired by a camera or other image system, often the vision system for which it is intended is unable to use it directly. The image may be corrupted by random variations in tensity, variations in illumination, or poor contrast that must be dealt with in the early stages of vision process, which is the reason why using image filter to enhance it.
+
+\section{Area Detection}
+Category: high risk, high priority. Status: complete.
+\begin{itemize}
+\item{Original Steps:}\\
+Detect the disease area automatically - complete.
+\end{itemize}
+
+\section{Eulerian Color Magnification:}
+Category: high risk, high priority. Status: complete.
+\begin{itemize}
+\item{Original Steps:}\\
+Detect the disease area automatically - complete.
+\end{itemize}
+Using Eulerian Video Magnification to reveal temporal variations in videos that are difficult or impossible to see with the naked eye and display them in an indicative manner.
