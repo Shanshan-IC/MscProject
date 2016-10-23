@@ -1,0 +1,9 @@
+It includes the following parts:
+File: New, Open an image, Save an Image, Recent Images, Exit.
+Edit: Undo, Cut, Copy, Paste
+View: Toorbar, Status Bar
+Image (Inclduing some basic geomatrix transformation): Rotate 90, Rotate 180, Rotate(Update parameter by users), Zoom In, Zoom Out, Resize(Update parameter by users)
+Process: Auto, Brightness and Contrast, Histogram(RGB Histogram, Histogram Equalization and CLAHE), Filter (Median, Gaussian and Bilateral filter), Area Detection 
+Video: Load the Video, Eulerian Video Manification to large the skins changes differences.
+Windows: Open more windows for multiple images
+Help: About PUimage

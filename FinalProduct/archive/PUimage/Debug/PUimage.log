@@ -1,0 +1,49 @@
+﻿Build started 07/09/2016 18:36:07.
+     1>Project "D:\image\final\PUimage - Copy (2)\PUimage\PUimage.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\opencv\build\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AddFunct.cpp
+         AddFunct.cpp
+     1>d:\image\final\puimage - copy (2)\puimage\addfunct.cpp(14): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\opencv\build\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\PUimage.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt EulerianDlg.cpp Manification.cpp PUimageView.cpp
+         PUimageView.cpp
+     1>d:\image\final\puimage - copy (2)\puimage\puimageview.cpp(261): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\image\final\puimage - copy (2)\puimage\puimageview.cpp(286): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\image\final\puimage - copy (2)\puimage\puimageview.cpp(373): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\image\final\puimage - copy (2)\puimage\puimageview.cpp(583): warning C4101: 'c' : unreferenced local variable
+     1>d:\image\final\puimage - copy (2)\puimage\puimageview.cpp(772): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\image\final\puimage - copy (2)\puimage\puimageview.cpp(911): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\image\final\puimage - copy (2)\puimage\puimageview.cpp(921): warning C4018: '<' : signed/unsigned mismatch
+         Manification.cpp
+     1>d:\image\final\puimage - copy (2)\puimage\manification.cpp(130): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\image\final\puimage - copy (2)\puimage\manification.cpp(248): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         EulerianDlg.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _AFXDLL /l"0x0409" /IDebug\ /nologo /fo"Debug\PUimage.res" PUimage.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\image\final\PUimage - Copy (2)\Debug\PUimage.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\opencv\build\x86\vc12\bin /LIBPATH:D:\opencv\build\x86\vc12\lib /LIBPATH:D:\opencv\build\x86\vc12\staticlib opencv_world300d.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\image\final\PUimage - Copy (2)\Debug\PUimage.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\image\final\PUimage - Copy (2)\Debug\PUimage.lib" /MACHINE:X86 Debug\PUimage.res
+         Debug\AddFunct.obj
+         Debug\BrightContrast.obj
+         Debug\BrightDlg.obj
+         Debug\ChildFrm.obj
+         Debug\ContrastDlg.obj
+         Debug\Cvvimage.obj
+         Debug\EulerianDlg.obj
+         Debug\MainFrm.obj
+         Debug\Manification.obj
+         Debug\Motion.obj
+         Debug\PrevDlg.obj
+         Debug\PUimage.obj
+         Debug\PUimageDoc.obj
+         Debug\PUimageView.obj
+         Debug\ResizeDlg.obj
+         Debug\RotateDlg.obj
+         Debug\SkinColor.obj
+         Debug\stdafx.obj
+         Debug\VideoPlay.obj
+         PUimage.vcxproj -> D:\image\final\PUimage - Copy (2)\Debug\PUimage.exe
+     1>Done Building Project "D:\image\final\PUimage - Copy (2)\PUimage\PUimage.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.64
